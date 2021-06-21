@@ -1,0 +1,15 @@
+.row {
+    margin-top: 1rem;
+}
+.row .shadow {
+    margin-left: 0.625rem;
+}
+.clickable:hover {
+    cursor: pointer;
+}
+.black-im {
+    color: black !important;
+}
+.toast-body {
+    background-color: #dc3545 !important;
+}

@@ -1,0 +1,616 @@
+.phone-twitter {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    overflow: hidden;
+    display: none;
+    font-family: 'Samsung Sans medium'!important;
+}
+
+.phone-twitter-header {
+    position: relative;
+    font-family: 'Samsung Sans thin';
+    font-size: 2.5vh;
+    top: 8%;
+    left: 0%;
+    width: 100%;
+    height: 5vh;
+    border-bottom: 0px;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 0vh;
+}
+
+.phone-tweets {
+    position: relative;
+    display: none;
+    height: 74%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    top: 8%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.phone-twitter-footer {
+    position: relative;
+    top: 8.5%;
+    height: 8%;
+    width: 100%;
+}
+
+.phone-twitter-footer-icon {
+    float: left;
+    height: 5vh;
+    width: 33%;
+}
+
+.phone-twitter-footer-icons {
+    margin-top: 1.25vh;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+.phone-twitter-footer-icons:hover {
+    color: #00a2ff;
+    transition: 0.5s;
+}
+
+.phone-twitter-inputt {
+    position: relative;
+    left: 2vh;
+    font-family: 'Samsung Sans medium'!important;
+    height: 5vh!important;
+    width: 18vh!important;
+    border: none!important;
+    outline: none;
+    font-size: 2vh!important;
+    float: left;
+}
+
+.phone-twitter-inputt:hover {
+    border: none!important;
+}
+
+.phone-tweet {
+    position: relative;
+    min-height: 7vh;
+    width: 100%;
+    background-color: rgb(250, 248, 248);
+    margin-top: 0.5vh;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.darkphone-tweet {
+    background-color: rgb(35, 35, 35);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: rgb(255, 255, 255);
+}
+
+.phone-tweet-header {
+    position: relative;
+    height: 5vh;
+    line-height: 3vh;
+    width: 100%;
+    color: rgb(107, 107, 107);
+    font-family: 'Samsung Sans medium';
+    overflow: hidden;
+}
+
+.darkphone-tweet-header {
+    color: rgb(182, 182, 182);
+}
+
+.phone-tweet-usericon {
+    float: left;
+    width: 4vh;
+    height: 4vh;
+    border-radius: 3vh;
+    background-color: none;
+    margin-left: 1vh;
+    margin-top: 0.5vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.phone-tweet-user {
+    float: left;
+    width: 15vh;
+    height: 5vh;
+    font-size: 1.5vh;
+}
+
+.phone-tweet-name {
+    width: 100%;
+    height: 50%;
+    line-height: 2.5vh;
+    padding-left: 1vh;
+    overflow: hidden;
+    color: black;
+}
+
+.darkphone-tweet-name {
+    color: white!important;
+}
+
+.phone-tweet-id {
+    width: 100%;
+    height: 50%;
+    line-height: 2.5vh;
+    padding-left: 1vh;
+    overflow: hidden;
+}
+
+.phone-tweet-date {
+    float: left;
+    font-size: 1.5vh;
+    height: 5vh;
+    line-height: 2.5vh;
+    width: 7.8vh;
+    text-align: center;
+}
+
+.phone-tweet-message {
+    position: relative;
+    min-height: 4vh;
+    line-height: 2vh;
+    font-size: 1.5vh;
+    width: 100%;
+    font-family: 'Samsung Sans medium';
+    padding: 1vh!important;
+}
+
+.tweetme {
+    background-color: rgba(0, 110, 255, 0.1);
+}
+
+.phone-tweet-image {
+    margin-left: 1vh;
+    height: auto;
+    width: auto;
+    min-height: 10vh;
+    max-width: 26vh;
+}
+
+.phone-tweet-image>img {
+    height: auto;
+    width: auto;
+    min-height: 10vh;
+    max-width: 26vh;
+}
+
+.phone-tweet-footer {
+    width: 100%;
+    height: 3vh;
+    line-height: 3vh;
+    color: rgb(107, 107, 107);
+}
+
+.darkphone-tweet-footer {
+    color: rgb(182, 182, 182);
+}
+
+.phone-tweet-footer-like {
+    float: left;
+    width: 8vh;
+    height: 3vh;
+    line-height: 3vh;
+    font-size: 1.5vh;
+    margin-left: 1vh;
+}
+
+.phone-tweet-footer-icons {
+    margin-top: 0.75vh;
+    margin-left: 1vh;
+    font-size: 1.5vh;
+    margin-right: 0.5vh;
+}
+
+.phone-tweet-footer-hearticon:hover {
+    color: rgb(238, 0, 0);
+    transition: 0.5s;
+}
+
+.liked {
+    color: rgb(238, 0, 0);
+}
+
+.liked:hover {
+    color: rgb(209, 0, 0);
+    transition: 0.5s;
+}
+
+
+/* Write new Tweet */
+
+.phone-twitter-newtweet {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 74%;
+    top: 5vh;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.phone-twitter-newpb {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 46vh;
+    top: 10vh;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.phone-twitter-ftavatar {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 46vh;
+    top: 10vh;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.phone-twitter-image {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 46vh;
+    top: 10vh;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.phone-twitter-name {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 46vh;
+    top: 10vh;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.phone-twitter-firsttimename {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 46vh;
+    top: 10vh;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.phone-twitter-firsttimeid {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 46vh;
+    top: 10vh;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.ptw-header {
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 2vh;
+    text-align: center;
+    background-color: #00a2ff;
+    color: white;
+    box-shadow: 1px 1px 1px 1px rgba(32, 32, 32, 0.2);
+}
+
+.ptw-exiticon {
+    position: absolute;
+    left: 1.5vh;
+    top: 1.5vh;
+}
+
+.ptw-exiticon:hover {
+    color: #e7e7e7;
+    transition: 0.5s;
+}
+
+.ptw-tweet {
+    width: 100%;
+    height: 36vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.ptw-submitzone {
+    width: 100%;
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 2vh;
+    text-align: center;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
+.darkptw-submitzone {
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+.ptw-submitzone-icon {
+    line-height: 4vh;
+    top: 0.5vh;
+    font-size: 3.5vh;
+    float: left;
+    margin-left: 3vh;
+    margin-top: 0.75vh;
+}
+
+.ptw-submitzone-icon:hover {
+    color: #00a2ff;
+    transition: 0.5s;
+}
+
+.activepicture {
+    color: #007bc2;
+}
+
+.ptw-submit {
+    float: left;
+    margin-left: 6vh;
+    margin-top: 0.5vh;
+    height: 4vh;
+    line-height: 4vh;
+    top: 0.5vh;
+    width: 50%;
+    left: 3vh;
+    border: none;
+    outline: none;
+    border-radius: 0.5vh;
+    background-color: #00a2ff;
+    color: #fff;
+}
+
+.ptw-submit:hover {
+    background-color: #0171b3;
+    transition: 0.5s;
+}
+
+.ptw-pbsubmit {
+    float: left;
+    height: 5vh;
+    line-height: 5vh;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #00a2ff;
+    color: #fff;
+}
+
+.ptw-pbsubmit:hover {
+    background-color: #0171b3;
+    transition: 0.5s;
+}
+
+.phone-tweet-input {
+    position: relative;
+    left: 0vh;
+    font-family: 'Samsung Sans medium';
+    height: 100%;
+    width: 100%;
+    line-height: 3vh!important;
+    padding: 1vh;
+    border: none;
+    outline: none;
+    font-size: 2vh;
+    background-color: rgb(252, 252, 252);
+}
+
+.darkphone-tweet-input {
+    background-color: rgb(29, 29, 29);
+}
+
+.phone-tweet-input:hover {
+    border: none!important;
+}
+
+
+/* Twitter Settings */
+
+.phone-twitter-settings {
+    display: none;
+    position: relative;
+    height: 74%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    top: 8%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.phone-twitter-settings-avatarsection {
+    width: 100%;
+    height: 15vh;
+}
+
+.phone-twitter-settings-avatar {
+    position: relative;
+    top: 1vh;
+    left: 8vh;
+    height: 13vh;
+    width: 13vh;
+    line-height: 13vh;
+    text-align: center;
+    border-radius: 8vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.phone-twitter-settings-avatarhover {
+    opacity: 0.0;
+    height: 13vh;
+    width: 13vh;
+    line-height: 13vh;
+    text-align: center;
+    border-radius: 8vh;
+    background-color: rgba(185, 185, 185, 0.0);
+    color: black;
+}
+
+.phone-twitter-settings-avatarhover:hover {
+    opacity: 1.0;
+    background-color: rgba(228, 228, 228, 0.4);
+    transition: 0.5s;
+}
+
+.phone-twitter-settings-avataredit {
+    font-size: 5vh;
+    margin-top: 4vh;
+    margin-left: 1vh;
+}
+
+.phone-twitter-settings-username {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    height: 5vh;
+    padding: 1vh;
+    line-height: 3vh;
+    font-size: 2vh;
+    text-align: center;
+}
+
+#twitter-username {
+    margin-right: 1vh;
+}
+
+.twitter-edit-username {
+    margin-top: 0.25vh;
+}
+
+.twitter-edit-username:hover {
+    color: #00a2ff;
+    transition: 0.5s;
+}
+
+
+/* First Time Register */
+
+
+/* Twitter Settings */
+
+.phone-twitter-firsttime {
+    position: relative;
+    display: none;
+    height: 74%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    top: 8%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.phone-twitter-firsttime-avatarsection {
+    position: relative;
+    top: 4vh;
+    width: 100%;
+    height: 15vh;
+}
+
+.phone-twitter-firsttime-avatar {
+    position: relative;
+    top: 1vh;
+    left: 8vh;
+    height: 13vh;
+    width: 13vh;
+    line-height: 13vh;
+    text-align: center;
+    border-radius: 8vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.phone-twitter-firsttime-avatarhover {
+    opacity: 0.0;
+    height: 13vh;
+    width: 13vh;
+    line-height: 13vh;
+    text-align: center;
+    border-radius: 8vh;
+    background-color: rgba(185, 185, 185, 0.0);
+    color: black;
+}
+
+.phone-twitter-firsttime-avatarhover:hover {
+    opacity: 1.0;
+    background-color: rgba(228, 228, 228, 0.4);
+    transition: 0.5s;
+}
+
+.phone-twitter-firsttime-avataredit {
+    font-size: 5vh;
+    margin-top: 4vh;
+    margin-left: 1vh;
+}
+
+.phone-twitter-firsttime-username {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    line-height: 3vh;
+    font-size: 2vh;
+    text-align: center;
+}
+
+#twitter-username {
+    margin-right: 1vh;
+}
+
+.twitter-edit-username {
+    margin-top: 0.25vh;
+}
+
+.twitter-edit-username:hover {
+    color: #00a2ff;
+    transition: 0.5s;
+}
+
+.twitter-edit-userid {
+    margin-top: 0.25vh;
+}
+
+.twitter-edit-userid:hover {
+    color: #00a2ff;
+    transition: 0.5s;
+}
+
+.twitter-firsttime-button {
+    position: relative;
+    height: 5vh;
+    line-height: 5vh;
+    top: 10vh;
+    width: 50%;
+    left: 7.3vh;
+    border: none;
+    outline: none;
+    border-radius: 0.5vh;
+    background-color: #00a2ff;
+    color: #fff;
+}
+
+.twitter-firsttime-button:hover {
+    background-color: #0171b3;
+    transition: 0.5s;
+}
+
+.twitter-edit-ftusername {
+    margin-top: 0.25vh;
+}
+
+.twitter-edit-ftusername:hover {
+    color: #00a2ff;
+    transition: 0.5s;
+}
+
+.twitter-edit-ftuserid {
+    margin-top: 0.25vh;
+}
+
+.twitter-edit-ftuserid:hover {
+    color: #00a2ff;
+    transition: 0.5s;
+}

@@ -1,0 +1,9 @@
+	Garage_9h = {
+		GaragePoint = { x = -3151.88, y = -1095.56, z = 19.71 },
+		SpawnPoint = { x = -3144.25, y = 1110.23, z = 20.7, h = 270.42 },
+		DeletePoint = { x = -3139.09, y = 1124.51, z = 19.7}
+	}
+	Pound_9h = {
+		PoundPoint = { x = -3136.72, y = 1102.65, z = 19.65 },
+		SpawnPoint = { x = -3144.25, y = 1110.23, z = 20.7, h = 270.42 }
+	}

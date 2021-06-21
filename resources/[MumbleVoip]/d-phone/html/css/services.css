@@ -1,0 +1,207 @@
+.phone-services {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    overflow: hidden;
+    display: none;
+}
+
+.phone-services-sector {
+    display: block;
+    position: absolute;
+    height: 84%;
+    width: 100%;
+    top: 16%;
+}
+
+.phone-services-list {
+    position: absolute;
+    height: 98.2%;
+    top: 0vh;
+    width: 99%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#phone-service-return {
+    position: relative;
+    left: 3vh;
+    top: 0.5vh;
+    height: 3vh;
+    width: 3vh;
+}
+
+#phone-service-return>i {
+    color: rgb(27, 131, 216);
+}
+
+#phone-service-return>i:hover {
+    color: rgb(12, 12, 12)
+}
+
+.phone-service {
+    position: relative;
+    width: 99%;
+    left: 0.3vh;
+    height: 6vh;
+    border-bottom: .1vh solid rgb(206, 206, 206);
+}
+
+.darkphone-service {
+    border-bottom: .1vh solid rgb(37, 37, 37);
+}
+
+.phone-services-list::-webkit-scrollbar {
+    width: .4vh;
+}
+
+.phone-services-list::-webkit-scrollbar-thumb {
+    background-color: #686de0;
+}
+
+.phone-services-list::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+}
+
+.phone-service-name {
+    position: absolute;
+    left: 2vh;
+    line-height: 6vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+.phone-service-actions {
+    position: absolute;
+    right: 0;
+    top: 1.8vh;
+    right: 2vh;
+    font-size: 2.2vh;
+    transition: .1s;
+}
+
+.phone-service-actions:hover {
+    color: rgb(27, 131, 216);
+}
+
+.phone-services-message {
+    display: none;
+    position: absolute;
+    height: 84%;
+    width: 100%;
+    top: 16%;
+}
+
+.phone-service-message-name {
+    position: relative;
+    height: 4vh;
+    width: 100%;
+    color: rgb(131, 131, 131);
+    padding: 1vh;
+    padding-left: 2vh;
+    font-family: 'Samsung Sans medium';
+}
+
+.phone-service-message-inputs {
+    position: relative;
+    height: 6vh;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.phone-service-message-input {
+    position: relative;
+    top: 0.5vh;
+    height: 4.5vh;
+    left: 5%;
+    font-family: 'Samsung Sans medium';
+    font-size: 1.75vh;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.phone-service-message-select {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.phone-service-selection {
+    position: relative;
+    width: 28.9vh;
+    height: 5vh;
+    line-height: 3vh;
+    padding: 1vh;
+    font-size: 1.75vh;
+    padding-left: 2vh;
+    color: rgb(36, 36, 36);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Samsung Sans thin';
+    font-weight: 600;
+}
+
+.darkphone-service-selection {
+    color: rgb(223, 223, 223);
+    border-bottom: 1px solid rgba(134, 134, 134, 0.2)!important;
+}
+
+.phone-service-selection>i {
+    color: #d3d3d5;
+}
+
+.phone-service-selection>i:hover {
+    color: rgb(27, 131, 216);
+}
+
+.phone-settings-switch {
+    position: absolute;
+    right: 2vh!important;
+    top: 1.75vh;
+}
+
+.phone-service-button {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    font-family: 'Samsung Sans thin';
+    font-weight: 400;
+    left: 0%;
+    top: 1vh;
+}
+
+#phone-service-button {
+    position: relative;
+    background-color: rgb(27, 131, 216);
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    font-weight: 400;
+    border-radius: 0.25vh;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#phone-service-button:hover {
+    color: rgb(27, 131, 216);
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.sendservicenumber {
+    color: grey;
+}
+
+.darksendservicenumber {
+    color: rgb(228, 228, 228);
+}

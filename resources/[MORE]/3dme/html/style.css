@@ -1,0 +1,10 @@
+@font-face {
+    font-family: out;
+    src: url(out.gfx);
+  }
+  
+  * {
+    font-family: 'out';
+    font-size: 22px;
+  }
+

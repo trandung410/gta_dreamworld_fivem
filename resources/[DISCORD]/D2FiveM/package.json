@@ -1,0 +1,18 @@
+{
+  "name": "d2fivem",
+  "version": "1.0.0",
+  "description": "Handles commands entered in discord to execute an action in FiveM",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "GitPlaceholder"
+  },
+  "author": "FlatracerMOD",
+  "license": "ISC",
+  "dependencies": {
+    "discordie": "^0.11.0"
+  }
+}

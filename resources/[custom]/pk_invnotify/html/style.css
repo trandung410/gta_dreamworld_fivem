@@ -1,0 +1,118 @@
+
+html { overflow-x: hidden !important; overflow-y: hidden !important; background-color: transparent !important;}
+body {background-color: transparent !important;}
+
+
+.al-item {
+     font-family: 'Montserrat','Prompt', sans-serif;
+     position: absolute;
+     bottom: 50%;
+     right: 2%;
+     margin-left: auto;
+     margin-right: auto;
+     width: 300px;
+}
+
+.card {
+     /* background: rgba(0, 0, 0, 0.678); */
+     background:linear-gradient(90deg, rgba(9, 75, 255, 0) 0%,rgba(0, 0, 0, 0.5) 50% ,rgba(9, 75, 255, 0) 100%);
+     width: 250px;
+     height: 50px;
+     outline: none;
+     border-radius: 0px;
+     outline: none;
+     border: none;
+     overflow: hidden;
+}
+.card::before {
+     content: "";
+     position: relative;
+     width: 300px;
+     height: 50px;
+     background: linear-gradient(90deg,rgba(183,52,219,0.0) 0%,rgba(183,52,219,0.7)30%,rgba(37,136,186,0.7)70%,rgba(37,136,186,0.0)100%); 
+     animation: kuyrai 1s ease;
+     overflow: hidden;
+     opacity: 0;
+     z-index: 9999;
+     
+}
+
+   @keyframes kuyrai {
+     from {
+       transform: translateX(-300px);
+       
+       opacity: 1;
+     }
+     to {
+       transform: translateX(300px);
+       opacity: 1;
+       
+     }
+   }
+@keyframes kuyrai2 {
+     from {
+       transform: translateX(-300px) scaleX(0);
+       opacity: 1;
+     }
+     to {
+       transform: translateX(0) scaleX(1);
+       opacity: 1;
+     }
+   }
+
+.card-body{
+     padding: 5px;
+     color: white;
+}
+
+.al-item .al-item-header {
+     background: none;
+     border:none;
+     display: flex;
+     top: -50px;
+     position: absolute;
+}
+.al-item .al-item-header .al-item-action {
+     color:rgb(161, 161, 161);
+     font-size:10px;
+     position:absolute;
+     right: -115px;
+     top: 50px;
+
+}
+span .test {
+   color: rgb(173, 173, 173);
+}
+.al-item .al-item-header .add {
+     background: none;
+     color:#fff;
+}
+.al-item .al-item-header .remove {
+     background: none;
+     color:#fff;
+}
+.al-item .al-item-header .use {
+     background: none;
+     color:#fff;
+}
+.al-item .al-item-img{
+     flex-grow: 1;
+}
+.al-item .al-item-header img {
+     width:60px;
+     position: absolute;
+     bottom: -70px;
+     transform: translate(-50%, -0%);
+     left: 100%;
+}
+.al-item .al-price-box .al-item-features {
+     background: none;
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 500;
+     margin-left: 30%;
+     top: 7px;
+     position: absolute;
+     display: flex;
+   
+}

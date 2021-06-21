@@ -1,0 +1,61 @@
+.member-table{
+
+    width: 650px;
+    height: 400px;
+
+    overflow: auto
+}
+.table-row{
+    width: 95%;
+    opacity: 0;
+    /* clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%); */
+    transition: 0.3s;
+}
+.table-row:hover > .table-col{
+    background-color: #0199a1;
+}
+.table-row:hover > .table-col > .row > .col > .btn-2{
+    opacity: 100%;
+    transform: scale(1.1);
+}
+.table-col{
+    
+    background-color: #484e58;
+    margin-top: 2px;
+    transition: 0.3s;
+}
+.btn-2{
+    width: 100%;
+    padding: 10px;
+    background-color: #e84545;
+    opacity: 0%;
+    transition: 0.3s;
+}
+.table-col .row .col{
+    margin-left: -35px;
+}
+.table-col.text{
+    padding: 10px;
+}
+.btn-2.fire{
+    clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn-2.promote{
+    clip-path: polygon(0% 0, 100% 0%, 86% 100%, 0% 100%);
+}
+.member-table > .col{
+    padding: 0;
+}
+table{
+    width: 100%;
+}
+.modal-select-lr{
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s;
+}
+.modal-option-lr{
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s;
+}

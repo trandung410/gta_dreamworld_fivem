@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <title>LR IMPOUND</title>
+</head>
+<body style="background-color: transparent !important;">
+    <div class="container-fluid" id="app" >
+        <div class="row">
+            <div class="col main left">
+                <!-- <div class="vehicle-img"></div> -->
+                <img class="vehicle-img" src="default.png" alt="">
+            </div>
+            <div class="col main right">
+                <div class=" title">
+                    Giam giữ
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col board left">
+                <div class="header text-center">Thông tin</div>
+                <div class="content" >Biển số : <span class="content-info" id="plate">12312312</span></div>
+                <div class="content" >Chủ sở hữu : <span class="content-info" id="onwer">Lorax</span></div>
+                <div class="content" >Màu : <span class="content-info" ><i class="fas fa-circle" id="color"></i></span></div>
+                <div class="content" >Thân xe : <span class="content-info" id="body">100%</span></div>
+                <div class="content" >Động cơ : <span class="content-info" id="engine">100%</span></div>
+                <div class="content" >Nhiên liệu : <span class="content-info" id="fuel">100%</span></div>
+            </div>
+            
+            <div class="col board right">
+                <div class="header text-center">Tác vụ</div>
+                <div class="content">Nhập lý do</div>
+                <textarea name="" id="reason" cols="95" rows="7"></textarea>
+                <div class="content">Tiền Phạt</div>
+                <input type="number" name="" id="fine" value="100000">
+            </div>
+        </div>
+        <div class="noti text-center"></div>
+        <div class="row bt">
+            <div class="col">
+                <button id="accept" class="btn left">đồng ý</button>
+            </div>
+            <div class="col">
+                <button id="cancel" class="btn right">Hủy bỏ</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

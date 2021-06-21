@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap');
+
+body {
+    background-color: transparent !important;
+}
+
+.template, .notification {
+    display: none;
+}
+
+.notif-container {
+    width: 100%;
+    position: absolute;
+    right: 0%;
+	top: 18vh;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+	justify-content: center;
+}
+
+.notification {
+	
+    padding: 10px;
+	max-width:40%;
+	text-align: center;
+    width: fit-content;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 1vw;
+    
+	position: absolute;
+	-webkit-animation:vibrate-1 .3s linear infinite both;animation:vibrate-1 .3s linear infinite both;
+  
+  
+  
+  
+  box-shadow: 5px 5px 20px rgba($gray, 10%);
+	
+}
+
+.success {
+    background: rgb(114, 204, 114);
+    color: #fff;
+}
+
+.inform {
+    background-color: rgb(47, 92, 115);
+    color: #ffffff;
+}
+
+.error {
+    background: linear-gradient(to right, #cb2d3e, #ef473a);
+    color: #fff;
+}
+@-webkit-keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}@keyframes vibrate-1{0%{-webkit-transform:translate(0);transform:translate(0)}20%{-webkit-transform:translate(-2px,2px);transform:translate(-2px,2px)}40%{-webkit-transform:translate(-2px,-2px);transform:translate(-2px,-2px)}60%{-webkit-transform:translate(2px,2px);transform:translate(2px,2px)}80%{-webkit-transform:translate(2px,-2px);transform:translate(2px,-2px)}100%{-webkit-transform:translate(0);transform:translate(0)}}

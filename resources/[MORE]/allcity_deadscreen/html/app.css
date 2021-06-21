@@ -1,0 +1,69 @@
+/* MADE BY KALU AND KASHNAR
+[ALL CITY]
+version : 1.00
+update : 16/06/2018
+info: */
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	margin-top: 62vh;
+	margin-left: 45vw; /*25*/
+	width: 228px; /*958px;*/
+	height: 240px;
+	color: red;
+	border-radius: 15px;
+	border: 5px solid rgb(255, 0, 0);
+	background-color: rgb(255, 255, 255);	
+	display: none;
+}
+
+#wrapper-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 15px;
+	color: yellow;
+	margin: auto;
+}
+
+#titre {
+	font-size: 25px;
+	color: red;
+	margin-top: 15px;
+}
+
+#titre1 {
+	font-size: 15px;
+	color: purple;
+	margin-left: 5px;
+	margin-top: 15px;
+
+}
+
+#titre2 {
+	font-size: 12px;
+	color: rgb(175, 175, 175);
+	margin-top: 15px;
+	
+}
+
+#titre3 {
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	margin-top: 12px;
+    margin-left: 12px;
+
+}
+#button {
+	width: 220px; /*958px;*/
+	height: 50px;
+	border-radius: 5px;
+	background-color: green;
+	margin-top: 15px;
+
+}

@@ -1,0 +1,501 @@
+/* Phone Call App */
+
+.phone-call-app {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    color: black;
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 35s ease infinite;
+    -moz-animation: AnimationName 35s ease infinite;
+    animation: AnimationName 35s ease infinite;
+    overflow: hidden;
+    display: none;
+}
+
+.phone-call-incoming {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.phone-call-incoming-title {
+    position: relative;
+    text-align: center;
+    top: 7.5vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 2.5vh;
+    font-weight: 500;
+}
+
+.phone-call-incoming-caller {
+    position: relative;
+    text-align: center;
+    top: 7vh;
+    font-family: 'Samsung Sans Regular';
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.phone-call-incoming-picture {
+    position: absolute;
+    margin: 0 auto;
+    width: 12vh;
+    height: 12vh;
+    left: 0;
+    right: 0;
+    top: 18vh;
+    border-radius: 50%;
+    border: .2vh solid #ffffff6c;
+    background: rgba(27, 27, 27, 0.25);
+    box-shadow: 0 0 .5vh 0 rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+#incoming-answer {
+    position: absolute;
+    bottom: 4vh;
+    left: 3vh;
+    transform: rotate(90deg);
+    color: white;
+    background-color: #1f9450e5;
+    padding: 1.5vh;
+    font-size: 2.2vh;
+    border-radius: 50%;
+    transition: .1s;
+    animation: pulse 2s infinite;
+}
+
+#incoming-answer:hover {
+    color: #1f9450e5;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: .1s;
+}
+
+#incoming-deny {
+    position: absolute;
+    bottom: 4vh;
+    right: 3vh;
+    transform: rotate(-135deg);
+    color: #fff;
+    background-color: #ce2816e0;
+    padding: 1.5vh;
+    font-size: 2.2vh;
+    border-radius: 50%;
+    transition: .1s;
+    animation: pulse 2s infinite;
+}
+
+#incoming-deny:hover {
+    color: #ce2816e0;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: .1s;
+}
+
+
+/* Outgoing */
+
+.phone-call-outgoing {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.phone-call-outgoing-title {
+    position: relative;
+    text-align: center;
+    top: 7.5vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 2.5vh;
+    font-weight: 500;
+    text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+}
+
+.phone-call-outgoing-caller {
+    position: relative;
+    text-align: center;
+    top: 8vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 2vh;
+    font-weight: 500;
+    text-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+}
+
+.phone-call-outgoing-picture {
+    position: absolute;
+    margin: 0 auto;
+    width: 12vh;
+    height: 12vh;
+    left: 0;
+    right: 0;
+    top: 18vh;
+    border-radius: 50%;
+    border: .2vh solid #ffffff6c;
+    background: rgba(27, 27, 27, 0.25);
+    box-shadow: 0 0 .5vh 0 rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+#outgoing-cancel {
+    position: absolute;
+    bottom: 8vh;
+    margin: 0 auto;
+    left: 40.8%;
+    transform: rotate(-135deg);
+    color: #fff;
+    background-color: #ce2816e0;
+    padding: 1.5vh;
+    font-size: 2.5vh;
+    border-radius: 50%;
+    transition: background-color .1s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+#outgoing-cancel:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #ce2816e0;
+    transition: .2s;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.8);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+/* Ongoing */
+
+.phone-call-ongoing {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.phone-call-ongoing-title {
+    position: relative;
+    text-align: center;
+    top: 7.5vh;
+    font-family: 'Samsung Sans Regular';
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+
+.phone-call-ongoing-caller {
+    position: relative;
+    text-align: center;
+    top: 8vh;
+    font-family: 'Samsung Sans Regular';
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.phone-call-ongoing-picture {
+    position: absolute;
+    margin: 0 auto;
+    width: 12vh;
+    height: 12vh;
+    left: 0;
+    right: 0;
+    top: 18vh;
+    border-radius: 50%;
+    border: .2vh solid #ffffff6c;
+    background: rgba(27, 27, 27, 0.25);
+    box-shadow: 0 0 .5vh 0 rgba(0, 0, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+.phone-call-ongoing-time {
+    position: relative;
+    text-align: center;
+    top: 15vh;
+    font-family: 'Samsung Sans Regular';
+    font-size: 2vh;
+    font-weight: 500;
+}
+
+#ongoing-cancel {
+    position: absolute;
+    bottom: 8vh;
+    margin: 0 auto;
+    left: 40.8%;
+    transform: rotate(-135deg);
+    color: #fff;
+    background-color: #ce2816e0;
+    padding: 1.5vh;
+    font-size: 2.5vh;
+    border-radius: 50%;
+    transition: background-color .1s ease-in-out;
+    animation: pulse 2s infinite;
+}
+
+#ongoing-cancel:hover {
+    background-color: #ce2816e0;
+    color: #fff;
+    transition: .2s;
+}
+
+.phone-call {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    overflow: hidden;
+    display: none;
+}
+
+.phone-call-header {
+    position: relative;
+    font-family: 'Samsung Sans thin';
+    font-size: 2.5vh;
+    top: 8%;
+    left: 0%;
+    width: 100%;
+    height: 5vh;
+    border-bottom: 0px;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 0vh;
+}
+
+.phone-call-sector {
+    display: block;
+    position: absolute;
+    height: 74%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    top: 10vh;
+}
+
+.phone-all-call-sector {
+    display: hide!important;
+    position: absolute;
+    height: 74%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    top: 10vh;
+}
+
+.phone-all-call-sector-selection {
+    height: 7vh;
+    line-height: 2.75vh;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Samsung Sans medium';
+    font-size: 1.5vh;
+}
+
+.phone-all-call-sector-selection-text {
+    float: left;
+    height: 100%;
+    width: 65%;
+    padding: 1vh;
+    padding-left: 2vh;
+}
+
+.phone-all-call-sector-selection-recall {
+    float: left;
+    height: 100%;
+    width: 35%;
+    line-height: 8vh;
+}
+
+.pacs-icon {
+    color: rgb(27, 131, 216);
+    font-size: 2.5vh;
+    margin-left: 1vh;
+}
+
+.pacs-icon:hover {
+    color: rgb(23, 99, 161);
+    transition: .5s;
+}
+
+.phone-call-bottom {
+    position: absolute;
+    height: 8%;
+    width: 100%;
+    bottom: 1vh;
+}
+
+.phone-call-footer-item {
+    float: left;
+    width: 14.4vh;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 1.5vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.phone-call-footer-item:hover {
+    background-color: rgb(218, 218, 218);
+    transition: 0.5s;
+}
+
+#phone-number-enter {
+    position: absolute;
+    width: 90%;
+    height: 5vh;
+    line-height: 5vh;
+    left: 5%;
+    top: 2vh;
+    font-family: 'Samsung Sans medium';
+    text-align: center;
+    font-size: 3vh;
+}
+
+.phone-enter-sector {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 8%;
+    top: 15%;
+}
+
+.phone-enter {
+    float: left;
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
+    text-align: center;
+    line-height: 6vh;
+    font-size: 3vh;
+    font-family: 'Samsung Sans medium';
+    height: 6vh;
+    width: 6vh;
+    background-color: rgb(241, 241, 241);
+    border-radius: 5vh;
+}
+
+.phone-enter:hover {
+    background-color: rgb(226, 226, 226);
+    transition: .1s;
+}
+
+.phone-enter-call {
+    float: left;
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
+    text-align: center;
+    line-height: 6vh;
+    font-size: 3vh;
+    font-family: 'Samsung Sans medium';
+    height: 6vh;
+    width: 6vh;
+    background-color: #1b9916;
+    border-radius: 5vh;
+}
+
+.phone-enter-call:hover {
+    background-color: #178613;
+    transition: .1s;
+}
+
+.phone-enterinvisible {
+    float: left;
+    margin-top: 1.5vh;
+    margin-left: 1.5vh;
+    text-align: center;
+    line-height: 6vh;
+    font-size: 3vh;
+    font-family: 'Samsung Sans medium';
+    height: 6vh;
+    width: 6vh;
+    background-color: rgba(224, 224, 224, 0);
+    border-radius: 5vh;
+}
+
+.phone-enterinvisibleicon {
+    position: relative;
+    margin-top: 1.5vh;
+    color: rgb(0, 0, 0)!important;
+}
+
+.darkphone-enterinvisibleicon {
+    color: rgb(255, 255, 255)!important;
+}
+
+#phone-enter-deletelast {
+    display: none;
+}
+
+.darkmode {
+    background: rgb(20, 20, 20)!important;
+    color: white!important;
+}
+
+.darkmodeheader {
+    box-shadow: 2px 1px 2px rgba(105, 105, 105, 0.2)!important;
+}
+
+.darkphone-enter {
+    background-color: rgb(25, 25, 25)!important;
+}
+
+.darkphone-enter:hover {
+    background-color: rgb(35, 35, 35)!important;
+    transition: 0.5s;
+}
+
+.darkphone-call-footer-item:hover {
+    background-color: rgb(35, 35, 35)!important;
+    transition: 0.5s;
+}

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+#nebtn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: -92px;
+  left: 250px;
+  height: 30px;
+  width: 210px;
+  outline: none;
+  border:none;
+  color:white;
+  text-transform: uppercase;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 14px;
+
+  background-color:#2E2E2D;
+  border-radius: 3px;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+#nebtn:hover{
+  transform: scale(1.06);
+  background-color: #ae1200;
+  color:rgb(255, 255, 255);
+  transition: transform 0.5s;
+}
+
+#okbtn:hover{
+  transform: scale(1.06);
+  background-color: #067400;
+  color:rgb(255, 255, 255);
+  transition: transform 0.5s;
+}
+
+#okbtn{
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  top: -50px;
+  left: 25px;
+  height: 30px;
+  width: 210px;
+  outline: none;
+  border:none;
+  color:rgb(255, 255, 255);
+  text-transform: uppercase;
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 14px;
+
+  background-color:#2E2E2D;
+  border-radius: 3px;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+#title {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  top: -47px;
+  font-weight: 500;
+}
+
+#title2 {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-family: 'Passion One', cursive;
+  font-size: 35px;
+  top: -20px;
+  font-weight: 500;
+}
+
+#description {
+  position: relative;
+  margin-left: 40px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  top: -60px;
+  left: -25px;
+  font-weight: 400;
+}
+
+#box {
+  transition: 300ms;
+  height: 240px; /* Höhe der div-Box */
+  width: 480px; /* Breite der div-Box */
+  margin-top: -150px; /* Damit der "Ausrichtungspunkt" in der Mitte der Box liegt */
+  margin-left: -150px;
+  display: none;
+  position: absolute; /* positionieren */
+  top: 50%; /* in die Mitte verschieben */
+  left: 45%;
+  background-color: #242323;
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  border-top: 5px rgb(252, 152, 0) solid;
+  border-radius: 3px;
+}

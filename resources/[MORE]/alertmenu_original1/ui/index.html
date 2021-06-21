@@ -1,0 +1,46 @@
+﻿<html>
+    <head>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+		<div id="retrieve-form">
+			<button id="exit">&#x2715;</button>
+			<h1 style="color: rgb(255, 174, 0);">Dịch vụ | Tín hiệu yêu cầu</h1>
+			<hr>
+			<div class="scrollable">
+
+				<table>
+					<thead>
+						<tr class="heading">
+							<th>Dịch vụ</th>
+							<th>Người yêu cầu</th>
+							<th>SĐT</th>
+							<th>Khoảng cách</th>
+							<th>Hành động</th>
+						</tr>
+					</thead>
+
+						<tbody id="impounded-vehicles">
+							
+						</tbody>
+
+				</table>
+			</div>
+			<hr>
+				<button class="button ping" id="ping-police" value="police">Gọi cảnh sát</button>
+				<button class="button ping" id="ping-ambulance" value="ambulance">Gọi bác sĩ</button>
+				<button class="button ping" id="ping-mechanic" value="mechanic">Gọi sửa xe</button>
+				<button class="button ping" id="ping-taxi" value="mechanic">Gọi taxi</button>
+		</div>
+		<div id="main-form">
+			<div id="button-main">
+				<button class="button ping" id="ping-police" value="police">Gọi cảnh sát</button>
+				<button class="button ping" id="ping-ambulance" value="ambulance">Gọi bác sĩ</button>
+				<button class="button ping" id="ping-mechanic" value="mechanic">Gọi sửa xe</button>
+				<button class="button ping" id="ping-taxi" value="mechanic">Gọi taxi</button>
+			</div>
+		</div>
+		<script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

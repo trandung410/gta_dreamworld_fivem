@@ -1,0 +1,11 @@
+lang = {}
+lang.HelpNotification = '<FONT FACE="Montserrat">Nhấn [E] để chiếm đóng'
+lang.occupated = '<FONT FACE="Montserrat">Khu vực này đang thuộc về bạn'
+lang.CaptureLabel = '<FONT FACE="Montserrat">Đang chiếm'
+lang.CaptureNotify = '<FONT FACE="Montserrat">Có người đang chiếm khu vực của bạn'
+lang.Busy = '<FONT FACE="Montserrat">Đang có người chiếm khu này. Bạn không thể chiếm'
+lang.Captured = '<FONT FACE="Montserrat">Khu vực của bạn mới bị chiếm đóng'
+lang.BlipDefaultText = '<FONT FACE="Montserrat">Khu chiếm đóng'
+lang.InvalidJob = '<FONT FACE="Montserrat">Bạn không được phép ở đây '
+lang.SafeTime = '<FONT FACE="Montserrat">Khu vực này mới bị chiếm đóng.Hãy quay lại sau'
+lang.ChartsTitle = '<FONT FACE="Montserrat">BẢNG XẾP HẠNG CHIẾM ĐÓNG TUẦN 2'

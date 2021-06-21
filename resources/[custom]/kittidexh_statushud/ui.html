@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="da-DK">
+    <head>
+		<title>kittidexh_statushud</title>
+        <meta charset="utf-8">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/723d9b901d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link rel="stylesheet" href="ui.css" type="text/css">
+		<script src="ui.js" type="text/javascript"></script>
+		<script>	
+
+			$(function() {
+				var $debug = $("#debug");
+				var $heal = $("#heal");
+				var $box = $("#box");
+				var $boxArmor = $("#boxArmor");
+
+				window.addEventListener('message', function(event){
+					 //$heal.text(event.data.heal-100);
+					 //$debug.text(JSON.stringify(event.data)); 
+					 //$debug.text("asdasd");
+					 $box.css("width", (event.data.heal-100)+"%");
+					 $boxArmor.css("width", (event.data.armor)+"%");
+				}); 
+			});
+	</script>
+	</head>
+    <body>
+		<div id="hunger">
+			<div id="boxHunger">
+				<div id="hungerlevel" >100</div>
+				<span style="font-size: 11px; color: rgb(255, 255, 255);"><i class="fas fa-hamburger"></i></span>
+			</div>
+		</div>
+		<div id="thirst">
+			<div id="boxThirst">
+				<div id="waterlevel" >100</div>
+				<span style="font-size: 11px; color: rgb(255, 255, 255);"><i class="fas fa-beer"></i></i></span>
+			</div>
+		</div>
+		<div id="heal">
+			<div id="box">
+				<div id="healtlevel" >100</div>
+				<span style="font-size: 11px; color: rgb(255, 255, 255);"><i class="fas fa-heart"></i>	</span>
+			</div>
+		</div>
+		<div id="armor">
+			<div id="boxArmor">
+				<div id="armorlevel" >100</div>
+				<span style="font-size: 11px; color: rgb(255, 255, 255);"><i class="fas fa-shield-alt"></i></span>
+			</div>
+		</div>
+		<div id="stamina">
+			<div id="boxStamina"></div>
+				<div id="staminalevel" >100</div>
+				<span style="font-size: 11px; color: rgb(255, 255, 255);"><i class="fas fa-bolt"></i></span>
+			</div>
+		</div>
+		<div id="dive">
+			<div id="boxDive"></div>
+				<div id="divelevel" >100</div>
+				<span style="font-size: 11px; color: rgb(255, 255, 255);"><i class="fas fa-swimmer"></i></span>
+			</div>
+		</div>
+		<div id="id">
+			<div id="boxid"></div>
+			<div id="playerid">#1</div>
+		</div>
+    </body>
+</html>

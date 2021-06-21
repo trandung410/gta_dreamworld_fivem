@@ -1,0 +1,154 @@
+div { border: 0; outline: 0; vertical-align: baseline; background: transparent; margin: 0; padding: 0; }
+:focus { outline: 0; }
+::selection { background: transparent; }
+
+#menu {
+	color: rgb(191, 206, 194);
+	background: rgba(0, 146, 189, 1);
+	text-align: center;
+	font-family: Arial;
+	font-size: 1.5em;
+	padding: 5px;
+	position: fixed;
+	right: 1%;
+	top: 8%;
+	width: 25%;
+	height: 85%;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#save {
+	font-size: 2.6em;
+	position: fixed;
+	right: 9.2%;
+	bottom: 13%;
+	white-space: nowrap;
+	border-radius: 22%;
+}
+
+#save button {
+	display: inline-block;
+	color: rgb(191, 206, 194);
+	background: rgba(0, 0, 0, 0.6);
+	/* padding: 5% 9% 5% 9%; */
+	width: 180px;
+	height: 40px;
+	border-radius: 50px;
+	padding: 0px;
+	border: 2px solid #fff;
+}
+
+#save button:hover {
+	border: 2px solid rgb(131,174,0);
+	background: rgba(131,174,0, 1);
+}
+
+#rotate {
+	font-size: 0.6em;
+	position: fixed;
+	right: 20.3%;
+	bottom: 8%;
+	white-space: nowrap;
+}
+
+#rotate span {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5% 9% 5% 9%;
+	border-radius: 13%;
+	margin-right: 4%;
+}
+
+#color {
+	font-size: 0.6em;
+	position: fixed;
+	right: 11.3%;
+	bottom: 8%;
+	white-space: nowrap;
+}
+
+#color span {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5% 9% 5% 9%;
+	border-radius: 13%;
+	margin-right: 4%;
+}
+
+#escape {
+	font-size: 0.6em;
+	position: fixed;
+	right: 3.3%;
+	bottom: 8%;
+	white-space: nowrap;
+}
+
+#escape span {
+	background: rgba(0, 0, 0, 0.6);
+	padding: 5% 9% 5% 9%;
+	border-radius: 13%;
+	margin-right: 4%;
+}
+
+#selectors {
+	position: relative;
+}
+
+#selectors button {
+	background: rgba(0, 0, 0, 0.35);
+	border: 0px;
+	margin-top: 7px;
+	border: 1px solid #fff;
+	padding: 7px;
+	border-radius: 50px;
+}
+
+#selectors button:hover{
+	border: 1px solid rgb(231, 60, 62);
+}
+
+#selectors img {
+	width: 32px;
+	height: 32px;
+}
+
+.item {
+	height: 65%;
+	overflow-y: scroll;
+}
+
+.item button {
+	display: inline-block;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	border-radius: 22%;
+	padding: 2px;
+	border: 0px solid rgba(231, 60, 62, 0);
+	background-color: #4CAF50;
+}
+
+.item img:hover {
+	opacity: 0.5;
+	background-color: #4CAF50;
+}
+
+.item img {
+	background-color: #4CAF50;
+    height: 80px;  
+    width: 80px;
+    border-radius: 22%;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  /* border: 1px solid #fff; */
+  border-radius: 3px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 3px;
+}

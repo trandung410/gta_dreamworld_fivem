@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyx Banking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://kit.fontawesome.com/348e1bce98.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container" id="bankui">
+        <!--button class="close">X</button-->
+        <div class="row">
+            <div style="animation: fadeInUp .75s;"></div>
+            <div class="logo">Dream World Bank</div>
+            <div class="account-info">
+                <div class="welcome"></div>
+                <div class="info-label"><i class="fas fa-university"></i>
+                    <div class="balance"></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="row-2nd">
+                <div class="column-2nd">
+                    <div class="account-services">
+                        <div class="label m-top"></div>
+                        <div style="padding: 20px;"></div>
+                        <div class="deposit m-top">
+                            <div class="label-sm">Gửi Tiền</div>
+                            <input type="number" placeholder="Số tiền" id="depositval" class="inputs">
+                            <button class="btn-deposit" id="deposit"><i class="fas fa-piggy-bank"></i></button>
+                        </div>
+                        <div class="withdraw m-top">
+                            <div class="label-sm">Rút Tiền</div>
+                            <input type="number" placeholder="Số tiền" id="withdrawval" class="inputs">
+                            <button class="btn-withdraw" id="withdraw"><i class="fas fa-money-check"></i></button>
+                        </div>
+                        <div style="padding: 20px;"></div>
+                        <div class="transfer-money">
+                            <div class="label m-top">Chuyển Tiền</div>
+                            <div style="padding: 15px;"></div>
+                            <div class="input-section">
+                                <input type="number" placeholder="Người nhận" id="idval" class="inputs">
+                            </div>
+                            <div class="input-section">
+                                <div style="padding: 5px;"></div>
+                                <input type="number" placeholder="Số tiền" id="transferval" class="inputs">
+                                <div style="padding: 10px;"></div>
+                                <button class="btn-transfer" id="transfer"><i class="fas fa-university"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/b6ec58ae28.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

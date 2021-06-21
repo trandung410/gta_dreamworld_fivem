@@ -1,0 +1,12 @@
+* {
+    color: white !important;
+}
+body {
+    background-color: rgb(3, 95, 107);
+    margin: 0;
+    padding: 0;
+}
+.container-bg {
+    padding-top: 65px;
+    color: white !important;
+}

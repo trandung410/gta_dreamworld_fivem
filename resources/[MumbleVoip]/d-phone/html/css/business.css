@@ -1,0 +1,367 @@
+.phone-businessapp {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    overflow: hidden;
+    font-family: 'Samsung Sans medium';
+    font-size: 1.5vh;
+    display: none;
+}
+
+.phone-businessapp-sector {
+    display: block;
+    position: absolute;
+    height: 75%;
+    width: 100%;
+    top: 16%;
+}
+
+#phone-businessapp-return {
+    position: relative;
+    left: 3vh;
+    top: 0.5vh;
+    height: 3vh;
+    width: 3vh;
+}
+
+#phone-businessapp-return>i {
+    color: rgb(27, 131, 216);
+}
+
+#phone-businessapp-return>i:hover {
+    color: rgb(12, 12, 12)
+}
+
+.phone-business {
+    position: relative;
+    width: 99%;
+    left: 0.3vh;
+    height: 6vh;
+    border-bottom: .1vh solid rgb(206, 206, 206);
+    display: block;
+}
+
+.phone-businessapp-list::-webkit-scrollbar {
+    width: .4vh;
+}
+
+.phone-businessapp-list::-webkit-scrollbar-thumb {
+    background-color: #686de0;
+}
+
+.phone-businessapp-list::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+}
+
+.phone-ba-motd {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    padding: 1vh;
+    padding-left: 2vh;
+}
+
+.phone-ba-motd-h {
+    color: rgb(155, 155, 155);
+}
+
+#phone-ba-motd-inhalt {
+    position: relative;
+    height: 7.5vh;
+    overflow-y: scroll;
+}
+
+#phone-ba-member {
+    color: rgb(155, 155, 155);
+    padding: 1vh;
+    padding-left: 2vh;
+}
+
+.phone-ba-member-list {
+    position: relative;
+    width: 100%;
+    height: 32vh;
+    overflow-y: scroll;
+}
+
+.phone-ba-member {
+    position: relative;
+    width: 100%;
+    height: 7vh;
+    padding: 1vh;
+    padding-left: 2vh;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 1.8vh;
+}
+
+#phone-ba-member-number {
+    float: left;
+    width: 60%;
+    height: 2vh;
+    font-size: 1.5vh;
+}
+
+#phone-ba-member-call {
+    float: left;
+    margin-left: 2vh;
+    font-size: 1.8vh;
+}
+
+#phone-ba-member-call:hover {
+    color: rgb(27, 131, 216);
+    transition: 0.5s;
+}
+
+#phone-ba-member-message {
+    float: left;
+    margin-left: 2vh;
+    font-size: 1.8vh;
+}
+
+#phone-ba-member-message:hover {
+    color: rgb(27, 131, 216);
+    transition: 0.5s;
+}
+
+.phone-businessapp-footer {
+    position: absolute;
+    top: 91%;
+    width: 100%;
+    height: 8%;
+}
+
+.phone-businessapp-footer-item {
+    float: left;
+    width: 9.6vh;
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 1.5vh;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.phone-businessapp-footer-item:hover {
+    background-color: rgb(218, 218, 218);
+    transition: 0.5s;
+}
+
+.darkphone-businessapp-footer-item {
+    border-top: 1px solid rgba(180, 180, 180, 0.2);
+}
+
+.darkphone-businessapp-footer-item:hover {
+    background-color: rgb(35, 35, 35)!important;
+    transition: 0.5s;
+}
+
+.phone-recent-businessapp-sector {
+    position: relative;
+    height: 64.5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    top: 8%;
+    padding: 0.1vh;
+    display: none;
+}
+
+.phone-recent-businessapp-selection {
+    position: relative;
+    width: 28.9vh;
+    height: 6vh;
+    line-height: 4vh;
+    font-size: 2vh;
+    color: rgb(36, 36, 36);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Samsung Sans medium';
+    font-weight: 600;
+}
+
+.phone-recent-businessapp-selection:hover {
+    background-color: rgba(0, 0, 0, 0.014);
+}
+
+.phone-businessapp-message {
+    position: relative;
+    height: 74.5%;
+    width: 100%;
+    top: 8%;
+    padding: 0.1vh;
+    display: none;
+}
+
+.phone-businessapp-chat {
+    position: relative;
+    height: 76.5%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    top: 0%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.phone-businessapp-delete {
+    position: relative;
+    height: 12%;
+    width: 100%;
+    top: 0%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.phone-businessapp-button {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: 0%;
+    top: 0%;
+    border: none;
+    outline: none;
+    font-family: 'Samsung Sans Regular';
+    font-weight: 400;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bpb-accept {
+    background-color: rgb(23, 165, 35);
+    color: white;
+}
+
+.bpb-accept:hover {
+    color: rgb(23, 165, 35);
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.bpb-decline {
+    background-color: rgb(165, 23, 23);
+    color: white;
+}
+
+.bpb-decline:hover {
+    color: rgb(165, 23, 23);
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.phone-businessapp-input {
+    position: relative;
+    top: 0.5%;
+    height: 7.9%;
+    width: 100%;
+}
+
+.phone-businessapp-place {
+    float: left;
+    position: absolute;
+    right: 0vh;
+    bottom: 0vh;
+    height: 5.5vh;
+    font-size: 1.75vh;
+    width: 9vh;
+    line-height: 5.5vh;
+    text-align: center;
+}
+
+.phone-businessapp-place>i {
+    color: rgb(45, 45, 48);
+    font-size: 2.2vh;
+    float: left;
+    margin-left: 1.5vh;
+    margin-top: 2vh;
+}
+
+.phone-businessapp-place>i:hover {
+    color: rgb(27, 131, 216);
+}
+
+.phone-businessapp-inputt {
+    position: relative;
+    left: 2vh;
+    font-family: 'Samsung Sans medium'!important;
+    height: 5vh!important;
+    width: 18vh!important;
+    border: none!important;
+    font-size: 2vh!important;
+    float: left;
+}
+
+.phone-businessapp-inputt>input:active {
+    border: none!important;
+    outline: none!important;
+}
+
+.phone-businessapp-settings {
+    position: relative;
+    height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    top: 8%;
+    padding: 0.1vh;
+    display: none;
+}
+
+.phone-businessapp-settings-menu {
+    position: relative;
+    width: 28.9vh;
+    height: 6vh;
+    line-height: 4vh;
+    padding: 1vh;
+    font-size: 2vh;
+    padding-left: 2vh;
+    color: rgb(36, 36, 36);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Samsung Sans thin';
+    font-weight: 600;
+}
+
+.phone-businessapp-settings-menu>i {
+    color: #d3d3d5;
+}
+
+.phone-businessapp-settings-menu>i:hover {
+    color: rgb(27, 131, 216);
+}
+
+.darkphone-businessapp-settings-menu {
+    background-color: rgb(25, 25, 25);
+    color: rgb(233, 233, 233);
+    border-bottom: 1px solid rgba(136, 136, 136, 0.2);
+}
+
+.phone-businessapp-motd {
+    position: absolute;
+    top: 20vh;
+    left: 2vh;
+    display: none;
+    border-radius: 1vh;
+    width: 24vh;
+    height: 16vh;
+    box-shadow: 2px 2px 2px 2px rgba(32, 32, 32, 0.2);
+    background-color: rgba(218, 218, 218, 0.05);
+}
+
+.phone-businessapp-motd-headline {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    line-height: 5vh;
+    font-size: 2.5vh;
+    text-align: center;
+    font-family: 'Samsung Sans thin';
+    font-weight: 600;
+}
+
+.phone-businessapp-motd-headline>i:hover {
+    color: rgb(27, 131, 216);
+}
+
+#motd {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 2vh;
+    background-color: rgba(0, 0, 0, 0);
+}

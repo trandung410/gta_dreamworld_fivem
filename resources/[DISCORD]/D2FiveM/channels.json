@@ -1,0 +1,280 @@
+{
+	"cmdlistChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"cmdlistReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"helpChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"helpReturnChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+
+	"uptimeChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"uptimeReturnChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"sendChannel" : {
+		"first" : "850918309351129098",
+		"second" : "850918309351129098",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"sendReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "850918309351129098",
+		"third" : "",
+		"fourth" : ""
+	},
+
+	"ipChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"ipReturnChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"playersChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"playersReturnChannel" : {
+		"first" : "848011942432997420",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"getclientsChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"getclientsReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"kickChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"kickReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"newsChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"newsReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"reviveChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"reviveReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"freezeChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"freezeReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"unfreezeChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"unfreezeReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"reviveallChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"reviveallReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"tpChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"tpReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"cleareverythingChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"cleareverythingReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	"banChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"banReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcestopChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcestopReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcestartChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcestartReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcerestartChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcerestartReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcerefreshChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcerefreshReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcelistChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"resourcelistReturnChannel" : {
+		"first" : "850918309351129098",
+		"second" : "",
+		"third" : "",
+		"fourth" : ""
+	},
+	
+	"kickbanLogChannel" : "850918309351129098"
+}

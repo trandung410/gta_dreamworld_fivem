@@ -1,0 +1,55 @@
+<!-- /* Need Help? Join my discord @ discord.gg/yWddFpQ */ -->
+<html>
+ <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="config.css" type="text/css">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/348e1bce98.js" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+      
+ </head>
+<body>      
+    <div class="bg"></div>
+         
+    <div id="container">
+    <img class="logo" src="imgs/logo.png">            
+    <div class="enable_music"></div>   
+    </div>
+    <div class="pozicija2"> <i class='fa fa-spinner fa-spin'></i> Loading...  </div>
+</div>
+</center>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <audio id="leson" src="music/music.ogg" autoplay="true" hidden="true" loop="true"/>
+    <script>
+	
+
+    var play = true;
+    var myAudio = document.getElementById("leson");
+    
+    myAudio.volume = 0.4;
+	
+	
+    function onKeyDown(event) {
+            switch (event.keyCode) {
+                case 32: //SpaceBar                    
+                    if (play) {
+                        myAudio.pause();
+                        play = false;
+                    } else {
+                        myAudio.play();
+                        play = true;
+                    }
+                    break;
+            }
+        return false;
+    }
+    window.addEventListener("keydown", onKeyDown, false);
+    </script>
+ </body>
+</html>

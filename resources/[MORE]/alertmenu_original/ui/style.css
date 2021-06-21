@@ -1,0 +1,216 @@
+#exit {
+	background-color: rgba(255, 37, 37, 0.679);
+	position: relative;
+	top: 2%;
+	left: 97%;
+	color: rgb(0, 0, 0);
+}
+
+
+#exit:hover{
+	background-color: rgb(255, 0, 0);
+}
+#main-form {
+	display: none;
+	position: absolute;
+	background-color: #2020207b;
+	font-family: Copperplate;
+	width: auto;
+	height: auto;
+	right: 38vw;
+
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #bf00ff;
+
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+
+#button-main {
+	height: fit-content;
+	margin: 10px 10px 10px 10px;
+}
+
+.button2 {
+	margin-top: 5px;
+	
+	width: auto;
+	height: 2.5vw;
+	border-radius: 4px;
+	border-color: #529dff;
+	border-width: 1px;
+	color: rgb(47, 0, 255);
+}
+
+.button {
+	margin-top: 5px;
+	
+	width: 5vw;
+	height: 2.5vw;
+	border-radius: 4px;
+	border-color: #00f7ff;
+	border-width: 1px;
+	color: rgb(255, 255, 255);
+}
+
+.button:hover{
+	background-color: #00f7ff;
+	color: #000000;
+}
+
+.button2:hover{
+	background-color: #00ff88;
+	color: #00ff88;
+}
+
+
+
+
+#retrieve-form {
+	display: none;
+	background-image: url("https://i.imgur.com/61b8Fki.png");
+	height: 10%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	
+
+	
+	font-family: Copperplate;
+	width: 43%;
+	top: 10%;
+	height: auto;
+	margin: 2vw auto;
+	bottom: 500px;
+    padding: 20px;
+	background-color: #2020207b;
+	border-style: solid;
+	border-radius: 20px;
+	/* border-width: 1px; */
+	border-color: #bf00ff;
+
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer */
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+/* Global */
+h1 {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+	color: #ffffff;
+    text-align: left;
+    padding: 8px;
+}
+
+/* #retrieve-form td:last-of-type {
+	text-align: right;
+} */
+
+table .btn {
+	padding: 10px 20px;
+}
+
+.scrollable {
+	height:25vw;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+table tbody {
+	height: fit-content;
+	
+}
+
+/* tr:nth-child(even){background-color: #f2f2f2}
+ */
+th {
+    background-color: #4CAF50;
+    color: rgb(0, 51, 255);
+}
+
+.btn {
+	padding: 10px 35px;
+	border-radius: 4px;
+	border-color: #ffffff;
+	border-width: 1px;
+	color: white;
+}
+#ping:hover{
+	background-color: #4286f4;
+	color: #000000;
+}
+#success:hover{
+	background-color: #1dd855;
+	color: #000000;
+}
+
+#accept:hover{
+	background-color:#1dd855;
+	color: #000000;
+}
+
+#cancel:hover{
+	background-color:#d81e1e;
+	color: #000000;
+}
+
+.ping {
+	background-color: #727272;
+
+}
+.success {
+	background-color: #727272;
+
+}
+
+.accept {
+	background-color: #727272;
+}
+
+.cancel {
+	background-color: #727272;
+}
+
+
+.error {
+	color: #d81e1e;
+	display: block;
+	font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(255, 186, 58); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff; 
+  }

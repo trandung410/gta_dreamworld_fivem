@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="nui://esx_scoreboard/html/listener.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="nui://esx_scoreboard/html/style.css">
+</head>
+
+<body>
+	<div style="display: none;" id="wrap">
+
+		<div class="header">
+			<div class="jobs">
+				<p style="color:red;"> 👨‍⚕️ <span id="ems">0</span> </p>
+				<p style="color:#5ea1e0;"> 👮🏻 <span id="police">0</span> </p>
+				<p style="color:rgb(201, 114, 114);"> 🔧 <span id="mechanic">0</span> </p>
+			
+			</div>
+		</div>
+		<div class="playerlist">
+			<table id="playerlist" style="width: 100%;" >
+				<tr class="heading">
+					<th>ID</th>
+					<th>Tên</th>
+					<th>Nghề nghiệp</th>
+					<!-- <th>Số điện thoại</th> -->
+				</tr>
+			</table>
+		</div>
+
+		<div class="serverinfo">
+			Players: <span id="player_count">0</span> / <span id="max_players">0</span> <span style="font-size: 1.2vw">|</span>
+			Uptime: <span id="server_uptime"></span><span style="font-size: 1.2vw"> |</span>
+
+			Play time: <span id="play_time"></span>
+			<br>
+			<a style="font-size: 9px;">Dream World</a>
+
+		</div>
+	</div>
+</body>
+
+</html>

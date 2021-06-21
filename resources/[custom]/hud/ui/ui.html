@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <link href="ui.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+
+<body style="background-color: transparent !important;">
+
+    <div id="uito" class="container animate__animated animate__fadeInRight" style="display: block;">
+        <canvas id=c style="z-index: -9999;"></canvas>
+        <table>
+            <tr>
+                <td colspan="2">
+                    <div id="emprego">
+                        <span class="job"></span> - <span class="job2"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ml-10">
+                        <img src="img/wallet.png">&nbsp;<span class="cash" ></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ml-10">
+                        <img src="img/credit-card.png">&nbsp;<span class="bank"></span>
+                    </div>
+                </td>
+            </tr>
+            <!-- <tr>
+                <td colspan="2">
+                    <div class="ml-10">
+                        <img src="img/credit-card.png">&nbsp;<span class="vcoin"></span>
+                    </div>
+                </td>
+            </tr> -->
+            <tr>
+                <td colspan="2">
+                    <div class="ml-10">
+                        <img src="img/money-bag.png">&nbsp;<span class="black_money"></span>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="ml-10 " id="society">
+                        <img src="img/jobs/banker.png">&nbsp;<span class="society"></span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <script>
+        $(document).ready(function() {
+            window.addEventListener('message', function(event) {
+                var data = event.data;
+                if (data.loaded == true) {
+                    $(".container").css("display", data.show ? "none" : "block");
+                }
+                var job = $(".job");
+                var job2 = $(".job2");
+                var cash = $(".cash");
+                var bank = $(".bank");
+                var vcoin = $(".vcoin");
+                var black_money = $(".black_money");
+                var society = $(".society");
+                if (data.job != null) {
+                    job.text(data.job);
+                }
+                if (data.job2 != null) {
+                    job2.text(data.job2);
+                }
+                if (data.cash != null) {
+                    cash.text('$' + data.cash.toLocaleString('en-US'));
+                }
+                if (data.bank != null) {
+                    bank.text('$' + data.bank.toLocaleString('en-US'));
+                }
+                if (data.black_money != null) {
+                    black_money.text('$' + data.black_money.toLocaleString('en-US'));
+                }
+                if (data.vcoin != null) {
+                    vcoin.text(data.vcoin.toLocaleString('en-US'));
+                }
+                if (data.society != null) {
+                    $("#society").show();
+                    //$('.container').css('height', 199);
+                    society.text('$' + data.society.toLocaleString('en-US'));
+                } else {
+                    $("#society").hide();
+                    //$('.container').css('height', 170);
+                }
+                if (data.type != null) {
+                    if (data.type == 'hide_ui') {
+                        $("body").hide();
+                    } else {
+                        $("body").show();
+                    }
+                }
+            });
+        });
+
+        var w = c.width = 300,
+            h = c.height = 200,
+            ctx = c.getContext('2d'),
+
+            opts = {
+
+                len: 20,
+                count: 40,
+                baseTime: 10,
+                addedTime: 10,
+                dieChance: .15,
+                spawnChance: 1,
+                sparkChance: .0,
+                sparkDist: 10,
+                sparkSize: 20,
+
+                color: 'hsl(hue,100%,light%)',
+                baseLight: 1,
+                addedLight: 1, // [50-10,50+10]
+                shadowToTimePropMult: 0,
+                baseLightInputMultiplier: .01,
+                addedLightInputMultiplier: .02,
+
+                cx: w / 2,
+                cy: h / 2,
+                repaintAlpha: .44,
+                hueChange: .0
+            },
+
+            tick = 0,
+            lines = [],
+            dieX = w / 2 / opts.len,
+            dieY = h / 2 / opts.len,
+
+            baseRad = Math.PI * 2 / 6;
+
+        ctx.fillStyle = 'rgba(34, 40, 49,0.00)';
+        ctx.fillRect(0, 0, w, h);
+
+        function loop() {
+            w = c.width = document.getElementById('uito').getBoundingClientRect().width;
+            h = c.height = document.getElementById('uito').getBoundingClientRect().height;
+            window.requestAnimationFrame(loop);
+
+            ++tick;
+
+            ctx.globalCompositeOperation = 'source-over';
+            ctx.shadowBlur = 0;
+            ctx.fillStyle = 'rgba(34, 40, 49,0.00)'.replace('alp', opts.repaintAlpha);
+            ctx.fillRect(0, 0, w, h);
+            ctx.globalCompositeOperation = 'lighter';
+
+            if (lines.length < opts.count && Math.random() < opts.spawnChance)
+                lines.push(new Line);
+
+            lines.map(function(line) {
+                line.step();
+            });
+        }
+
+        function Line() {
+
+            this.reset();
+        }
+        Line.prototype.reset = function() {
+
+            this.x = 0;
+            this.y = 0;
+            this.addedX = 0;
+            this.addedY = 0;
+
+            this.rad = 0;
+
+            this.lightInputMultiplier = opts.baseLightInputMultiplier + opts.addedLightInputMultiplier * Math.random();
+
+            this.color = opts.color.replace('hue', tick * opts.hueChange);
+            this.cumulativeTime = 0;
+
+            this.beginPhase();
+        }
+        Line.prototype.beginPhase = function() {
+
+            this.x += this.addedX;
+            this.y += this.addedY;
+
+            this.time = 0;
+            this.targetTime = (opts.baseTime + opts.addedTime * Math.random()) | 0;
+
+            this.rad += baseRad * (Math.random() < .5 ? 1 : -1);
+            this.addedX = Math.cos(this.rad);
+            this.addedY = Math.sin(this.rad);
+
+            if (Math.random() < opts.dieChance || this.x > dieX || this.x < -dieX || this.y > dieY || this.y < -dieY)
+                this.reset();
+        }
+        Line.prototype.step = function() {
+
+            ++this.time;
+            ++this.cumulativeTime;
+
+            if (this.time >= this.targetTime)
+                this.beginPhase();
+
+            var prop = this.time / this.targetTime,
+                wave = Math.sin(prop * Math.PI / 2),
+                x = this.addedX * wave,
+                y = this.addedY * wave;
+
+
+            ctx.fillStyle = ctx.shadowColor = this.color.replace('light', opts.baseLight + opts.addedLight * Math.sin(this.cumulativeTime * this.lightInputMultiplier));
+            ctx.fillRect(opts.cx + (this.x + x) * opts.len, opts.cy + (this.y + y) * opts.len, 1, 1);
+
+
+        }
+        loop();
+
+        window.addEventListener('resize', function() {
+
+            w = c.width = window.innerWidth;
+            h = c.height = window.innerHeight;
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, w, h);
+
+            opts.cx = w / 2;
+            opts.cy = h / 2;
+
+            dieX = w / 2 / opts.len;
+            dieY = h / 2 / opts.len;
+        });
+    </script>
+</body>
+
+</html>

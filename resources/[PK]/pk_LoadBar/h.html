@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Athiti&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        #mina {
+            display: none;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body style="font-family: 'Lato', 'Athiti',sans-serif;">
+
+
+    <div id="mina" class="row" style="margin-top: 950px;">
+        <center>
+            <div style="background: linear-gradient(90deg, rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.7) 40%,rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.0) 100%); width: 25%; font-family: 'Lato', 'Athiti',sans-serif;">
+            <span id="percent" style="font-size: 15px;">animation <br/> progress</span> <br>
+            <span id="textCircle" style="font-size: 15px; color: white;">animation <br/> progress</span>
+            </div>
+        </center>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="circle-progress.js"></script>
+    <script>
+        $(function() {
+            window.onload = (e) => {
+                window.addEventListener('message', (event) => {
+                    var item = event.data;
+                    if (item !== undefined && item.type === "ui") {
+                        if (item.display === true) {
+                            $("#mina").show();
+                            console.log("pk_LoadBar Work!!!");
+                            var start = new Date();
+                            var maxTime = item.time;
+                            var text = item.text;
+                            var timeoutVal = Math.floor(maxTime / 100);
+                            animateUpdate();
+
+                            $('#textCircle').text(text);
+
+
+
+                            /*
+                            $('#pbar_innertext').text(text);
+
+                            function updateProgress(percentage) {
+                                $('#pbar_innerdiv').css("width", percentage + "%");
+                            }
+							*/
+
+
+                            function animateUpdate() {
+                                var now = new Date();
+                                var timeDiff = now.getTime() - start.getTime();
+                                var perc = Math.round((timeDiff / maxTime) * 100);
+                                var perc2 = perc / 100;
+                                if (perc <= 100) {
+                                    $('.first.circle').circleProgress({
+                                        value: perc2,
+                                        animation: false,
+                                        fill: {
+                                            gradient: ['#ff1e41', '#ff5f43']
+                                        }
+                                    });
+                                    $('#percent').html("<strong style='color:#fff'>" + perc + '<i>%</i></strong>');
+
+
+                                    setTimeout(animateUpdate, timeoutVal);
+                                } else {
+                                    $("#mina").hide();
+                                }
+                            }
+
+
+
+
+                        } else {
+                            $("#mina").hide();
+                        }
+                    }
+                });
+            };
+        });
+    </script>
+
+</body>
+
+</html>

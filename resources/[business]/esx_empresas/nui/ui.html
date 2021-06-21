@@ -1,0 +1,174 @@
+<html>
+
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<title>Business</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div class="container-content" style="display: none;">
+	<div class="container-menu">
+		<div class="container-header">
+			<!-- GERADO NO JS -->
+			<img class="title-img" src="https://steamuserimages-a.akamaihd.net/ugc/871868910064801764/4B114416C868AE7AC16140A559D3FC81D54ED3FE/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="img">
+			<div class="container-title">
+				<span class="title">LOCAL:</span>
+				<span class="subtitle">Gran senora</span>
+			</div>
+			<!-- GERADO NO JS -->
+		</div>
+		<div class="container-menu-buttons">
+			<button class="menu-buttons" onclick="openPage(1)"><span>Replenishment</span></button>
+			<button class="menu-buttons" onclick="openPage(2)"><span>Sell ​​stock</span></button>
+			<button class="menu-buttons" onclick="openPage(3)"><span>Employees</span></button>
+			<button class="menu-buttons" onclick="openPage(4)"><span>Upgrades</span></button>
+			<button class="menu-buttons" onclick="location.href='#abrirModal'"><span>Close company</span></button>
+		</div>
+	</div>
+
+	<div class="container-pages">
+		<div class="container-bar-page">
+			<!-- GERADO NO JS -->
+			<span class="status">Company status: <span style="color: #ff0000">ACTIVE</span></span>
+			<!-- GERADO NO JS -->
+			<div class="container-bars">
+				<!-- GERADO NO JS -->
+				<div class="bars">
+					<label class="bar-label" for="file">Products:</label>
+					<progress class="bar-blue" id="file" value="12" max="100"> 12% </progress>
+				</div>
+				<div class="bars">
+					<label class="bar-label" for="file2">Research:</label>
+					<progress class="bar-green" id="file2" value="32" max="100"> 32% </progress>
+				</div>
+				<div class="bars">
+					<label class="bar-label" for="file3">Supplies:</label>
+					<progress class="bar-orange" id="file3" value="92" max="100"> 92% </progress>
+				</div>
+				<!-- GERADO NO JS -->
+			</div>
+		</div>
+
+		<div class="container-page-main">
+			<div class="page-main">
+				<!-- GERADO NO JS -->
+				<div class="main-itens">
+					<span class="itens-title">Total earnings</span>
+					<span class="itens-value">R$ 500</span>
+				</div>
+				<div class="main-itens">
+					<span class="itens-title">Total Sales</span>
+					<span class="itens-value">6516</span>
+				</div>
+				<!-- GERADO NO JS -->
+			</div>
+		</div>
+
+		<div class="container-page-ressuply" style="display: none;">
+			<span class="page-title">Replenishment</span>
+			<div class="page">
+				<div class="page-buttons">
+					<p>Supplies are needed to make research modifications or generate money. They can be stolen from a variety of sources or a fee can be paid for supplies to be delivered directly to the company.</p>
+					<button class="buttons" onclick="suprimentos(1)">Steal supplies</button>
+					<!-- GERADO NO JS -->
+					<button id="comprar-suprimento-button" class="buttons" onclick="suprimentos(2)">Buy supplies $ 40,000</button>
+					<!-- GERADO NO JS -->
+				</div>
+				<div>
+					<img src="https://cdn.discordapp.com/attachments/490578081594081281/775394880381124689/ressuply.png" alt="Ressuply">
+				</div>
+			</div>
+		</div>
+
+		<div class="container-page-stock" style="display: none;">
+			<span class="page-title">Sell ​​stock</span>
+			<div class="page">
+				<div class="page-buttons">
+					<p>Sell ​​your product inventory to local buyers in Los Santos or Blaine Country for a larger payment.</p>
+					<!-- GERADO NO JS -->
+					<button id="vender-suprimento-button1" class="buttons" onclick="estoque(1)">Vender para Blaine Country</button>
+					<button id="vender-suprimento-button2" class="buttons" onclick="estoque(2)">Vender para Los Santos</button>
+					<!-- GERADO NO JS -->
+				</div>
+				<div>
+					<img src="https://cdn.discordapp.com/attachments/490578081594081281/775404455414726696/sellstock.png" alt="Sell Stock">
+				</div>
+			</div>
+		</div>
+
+		<div class="container-page-staff" style="display: none;">
+			<span class="page-title">Allocate employees</span>
+			<div class="page">
+				<div class="page-buttons">
+					<p>Manufacturing employees use supplies to create products. Research-allocated employees use supplies to generate research points and be able to purchase upgrades.</p>
+					<div class="list-staff">
+						<!-- GERADO NO JS -->
+						<label class="container-checkbox">Alocar funcionários para manufatura
+							<input type="radio" checked="checked" name="radio" onclick="alocar(0)">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container-checkbox">Alocar funcionários para pesquisa
+							<input type="radio" name="radio" onclick="alocar(1)">
+							<span class="checkmark"></span>
+						</label>
+						<label class="container-checkbox">Alocar funcionários para ambos
+							<input type="radio" name="radio" onclick="alocar(2)">
+							<span class="checkmark"></span>
+						</label>
+						<!-- GERADO NO JS -->
+					</div>
+				</div>
+				<div>
+					<img src="https://cdn.discordapp.com/attachments/490578081594081281/775405695461883944/Staff.png" alt="Staff">
+				</div>
+			</div>
+		</div>
+
+		<div class="container-page-upgrades" style="display: none;">
+			<div class="page-upgrades">
+				<div class="container-upgrade">
+					<img src="https://cdn.discordapp.com/attachments/490578081594081281/775405595574403122/upgrade1.png" alt="Upgrade1">
+					<div id="upgrade-data1">
+						<!-- GERADO NO JS -->
+						<span>Evoluir equipamentos</span>
+						<button onclick="upgrades(1)">Comprar R$200</button>
+						<!-- GERADO NO JS -->
+					</div>
+				</div>
+				<div class="container-upgrade">
+					<img src="https://cdn.discordapp.com/attachments/490578081594081281/775405597159981116/upgrade2.png" alt="Upgrade2">
+					<div id="upgrade-data2">
+						<!-- GERADO NO JS -->
+						<span>Evoluir funcionários</span>
+						<span class="comprado">COMPRADO</span>
+						<!-- GERADO NO JS -->
+					</div>
+				</div>
+				<div class="container-upgrade">
+					<img src="https://cdn.discordapp.com/attachments/490578081594081281/775405598341857290/upgrade3.png" alt="Upgrade3">
+					<div id="upgrade-data3">
+						<!-- GERADO NO JS -->
+						<span>Evoluir segurança</span>
+						<button onclick="upgrades(3)">Comprar R$200</button>
+						<!-- GERADO NO JS -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="abrirModal" class="modal">
+			<div>
+				<a href="#fechar" title="Fechar" class="fechar">x</a>
+				<h2>Close Company</h2>
+				<p>You will disable your company and everything will be lost. Are you sure?</p>
+				<button class="menu-buttons" onclick="fecharEmpresa()">Yes</button>
+				<button class="menu-buttons" onclick="location.href='#fechar'">No</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="panel.js" type="text/javascript"></script>
+</body>
+</html>

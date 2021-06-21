@@ -1,0 +1,233 @@
+html {
+	overflow: hidden;
+}
+body{
+        margin: 0px;
+	padding: 0px;
+    }
+
+#container {
+	
+position: absolute;
+	
+bottom: -100%;
+	
+left: 18.4%; /*25*/
+	
+width: 63.1578947368421VW; /*958px;*/
+	
+height: 36.84210526315789VW;
+	
+color: #ffffff00;
+	
+flex-direction: column;
+}
+    .main {
+        background: url('imgs/chanlebg2.png') no-repeat;
+        width: 63.1578947368421VW;
+        height: 36.84210526315789VW;
+        margin:auto;
+        position: relative;
+        text-align: center;
+        background-size: cover;
+    }
+    .chan {
+        background: url('imgs/chan.png') no-repeat;
+        background-size:cover;
+        width: 9.474vw;
+        height: 4.211vw;
+        position: absolute;
+        left: 12.105vw;
+        top: 7.895vw;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .le {
+        background: url('imgs/le.png') no-repeat ;
+        width: 9.474vw;
+        height: 4.211vw;
+        position: absolute;
+        right: 12.105vw;
+        top: 7.895vw;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .bonden {
+        background: url('imgs/bonden.png') no-repeat ;
+        background-size:cover;
+        width: 8.947vw;
+        height: 2.105vw;
+        position: absolute;
+        left: 8.789vw;
+        top: 19.842vw;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .bontrang {
+        background: url('imgs/bontrang.png') no-repeat ;
+        background-size:cover;
+        width: 8.947vw;
+        height: 2.105vw;
+        position: absolute;
+        left: 21.053vw;
+        top: 19.842vw;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .baden {
+        background: url('imgs/baden.png') no-repeat ;
+        background-size:cover;
+        width: 8.947vw;
+        height: 2.105vw;
+        position: absolute;
+        right: 21.053vw;
+        top: 19.842vw;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .batrang {
+        background: url('imgs/batrang.png') no-repeat ;
+        background-size:cover;
+        width: 8.947vw;
+        height: 2.105vw;
+        position: absolute;
+        right: 8.789vw;
+        top: 19.842vw;
+        animation: zoomout 0.2s ease-in-out infinite alternate;
+    }
+    .user {
+        background: url('imgs/img.png') no-repeat -1970px -416px;
+        width: 26px;
+        height: 34px;
+        position: absolute;
+        left: 6.053vw;
+        top: 15.789vw;
+    }
+    .dragon {
+        background: url('imgs/dragon.png') no-repeat;
+        width: 10.526vw;
+        height: 10.526vw;
+        position: absolute;
+        left: 26.22vw;
+        top: 4.7vw;
+        background-size: cover;
+        animation: spin 5s linear infinite;
+    }
+    .input{
+        width: 170px;
+        height: 30px;
+        border-radius: 50px;
+        position: absolute;
+        left: 12.368vw;
+        top: 15.063vw;
+        outline: 0;
+        text-align: center;
+        font-size: 1.053vw;
+        background: 0;
+        border: 0;
+        color : #000;
+    }
+
+    .txt{
+        padding-top: 15.789vw;
+        text-align: left;
+        top: 320px;
+        padding-left: 28.947vw;
+        /* left: 600px; */
+        width: 250px;
+    }
+    .statustxt{
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Segoe UI";
+        top: 500px;
+        text-shadow: 0 0 3px #000;
+        color: white;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .usertxt{
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Segoe UI";
+        top: 500px;
+        text-shadow: 0 0 3px #000;
+        color: white;
+    }
+    .dice{
+        position: absolute;
+    }
+    .dice1{
+        background: url('imgs/dice.png') no-repeat -507px -2px;
+        width: 5.158vw;
+        height: 5.053vw;
+		background-size: contain;
+        transform: scale(0.5) rotate(-20deg);
+        left: 27.368vw;
+        top: 6.316vw;
+        opacity: 0;
+    }
+    .dice2{
+        background: url('imgs/dice.png') no-repeat -404px -3px;
+        width: 5.158vw;
+        height: 5.053vw;
+		background-size: contain;
+        transform: scale(0.5) rotate(20deg);
+        left: 28.421vw;
+        top: 8.947vw;
+        opacity: 0;
+    }
+    .dice3{
+        background: url('imgs/dice.png') no-repeat 0 -2px;
+        width: 5.158vw;
+        height: 5.053vw;
+		background-size: contain;
+        transform: scale(0.5) rotate(10deg);
+        left: 30.526vw;
+        top: 6.842vw;
+        opacity: 0;
+    }
+    .dice4{
+        background: url('imgs/dice.png') no-repeat 0 -2px;
+        width: 5.158vw;
+        height: 5.053vw;
+		background-size: contain;
+        transform: scale(0.5) rotate(10deg);
+        left: 31.053vw;
+        top: 9.474vw;
+        opacity: 0;
+    }
+    .khung {
+        background: url('imgs/img.png') no-repeat -1107px -828px;
+        width: 179px;
+        height: 45px;
+        transform: scale(0.6);
+        position: absolute;
+        left: 26.737vw;
+        top: 2.632vw;
+    }
+    .time{
+        font-size: 3.684vw;
+        font-family: 'Intro', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        /* Warning: no fallback */
+        background: -webkit-linear-gradient(-86deg, #ff001b 5%, #0002ff 53%, #830c7f 91%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 8px transparent;
+        color: white;
+        position: absolute;
+        left: 29.437vw;
+        top: 7.895vw;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    @keyframes zoomout {
+        0% {
+            transform: scale(1.0);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+@font-face {
+  font-family: justsignature;
+  src: url('../fonts/justsignature/JustSignature.woff');
+}
+body, html {
+  font-family: 'Prompt', sans-serif;
+  width: 100%;
+  height: 100%;
+  color:rgb(255, 255, 255);
+}
+p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color:rgb(255, 255, 255);
+  font-size: 12px;
+}
+#id-card {
+  position: relative;
+  display: none;
+  margin: 230px 50px 0 0;
+  float: right;
+  width: 457px;
+  height: 272px;
+  padding: 54px 17px 10px 144px;
+  background: url("../images/idcard.png");
+  animation: slideInUp;
+  animation-duration: 0.5s; 
+  color:#fff;
+}
+.animate__animated.animate__slideInUp {
+  --animate-duration: 0.5s;
+}
+
+#name {
+  position: absolute;
+  top: 25px;
+  right: 120px;
+  font-weight: bolder;
+  font-size: 20px;
+  color:#fff;
+}
+#inline {
+  position: absolute;
+  top: 109px;
+  left: 30px;
+  text-transform: uppercase;
+}
+#dob {
+  position: absolute;
+  left: 2px;
+  width: 100px;
+}
+#sex {
+  position: absolute;
+  left: 100px;
+}
+#height {
+  position: absolute;
+  left: 185px;
+  width: 60px;
+}
+#signature {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+  color:#fff;
+  font-size: 19px;
+  text-transform:capitalize;
+  font-family: justsignature;
+}
+#licenses {
+  position: absolute;
+  top: 109px;
+  right: 20px;
+  width: 50px;
+  color:#fff;
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato','Athiti', sans-serif;
+}
+
+.body {
+    background: rgba(15, 15, 15, 0.3);
+}
+
+#bankui {
+    opacity: 0;
+    transition: 0.5s ease-in-out opacity;
+}
+
+*:focus {
+    outline: none;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 950px;
+    height: 390px;
+    /*background-color: rgba(227, 227, 226, 0.97);
+    border: 3px solid rgba(38, 143, 58, 0.8);*/
+    margin-top: 5%;
+    font-family: 'Lato','Athiti', sans-serif;
+}
+
+.column {
+    float: center;
+    padding: 10px;
+}
+
+.left {
+    width: 30%;
+    height: 340px !important;
+    text-align: left;
+    border-right: 2px solid rgba(210, 210, 210, 0.8);
+}
+
+.right {
+    width: 70%;
+    height: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 10px;
+}
+
+.logo {
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    /*border-bottom: 2px solid rgba(210, 210, 210, 0.8);*/
+    color: #ffffff;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.account-info {
+    font-size: 12px;
+}
+
+.welcome {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.info-label {
+    /* margin-left:10px; */
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    font-family: 'Lato','Athiti', sans-serif;
+}
+
+.blue-color {
+    color: #3a526c;
+}
+
+.red-color {
+    color: #a23935;
+}
+
+.balance, .creation {
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.quick-msg {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-quick {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 35px;
+    width: 80px;
+    border: none;
+    background-color: #0075b0;
+    color: white;
+    border-radius: 2px;
+    border: 1px solid rgba(126, 27, 27, 0.0);
+    transition: 0.2s ease-in-out all;
+    font-family: 'Lato','Athiti', sans-serif;
+}
+
+.label {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+.label-sm {
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    padding-bottom:5px;
+    font-family: 'Dancing Script', cursive;
+    margin: auto;
+}
+
+.m-top {
+    margin-top: 12px;
+}
+
+.m-top-med {
+    margin-top: 40px;
+}
+
+.m-top-big {
+    margin-top: 40px;
+}
+
+.m-top-bigger {
+    margin-top: 65px;
+}
+
+
+input[type="number"] {
+    border: 1px solid rgba(126, 27, 27, 0.0);
+    border-radius : 3px;
+    background: #1b1b1b;
+    text-align: center;
+    color: white;
+    padding: 5px 15px;
+    font-family: 'Lato','Athiti', sans-serif;
+}
+
+.btn-deposit {
+    display: center;
+    padding: 2px 30px;
+    left: 10px;
+    font-size: 17px;
+    background: #0075b0;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid rgba(126, 27, 27, 0.0);
+    transition: 0.2s ease-in-out all;
+    font-family: 'Lato','Athiti', sans-serif;
+
+}
+
+.btn-withdraw {
+    display: left;
+    padding: 2px 30px;
+    left: 10px;
+    background: #d8a706;
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+    border: 1px solid rgba(126, 27, 27, 0.0);
+    transition: 0.2s ease-in-out all;
+    font-family: 'Lato','Athiti', sans-serif;
+
+}
+
+.btn-transfer {
+    display: left;
+    margin: 0 auto;
+    padding: 2px 80px;
+    left: 10px;
+    background: #ee0505;
+    color: white;
+    border-radius: 3px;
+    font-size: 17px;
+    border: 1px solid rgba(126, 27, 27, 0.0);
+    transition: 0.2s ease-in-out all;
+    font-family: 'Lato','Athiti', sans-serif;
+
+}
+
+
+
+.btn-transfer:hover,.btn-withdraw:hover,.btn-deposit:hover, .btn-quick:hover {
+    background: #00b009;
+}
+
+.column-2nd {
+    position: center;
+    width: 100%;
+    float: center;
+    
+}
+
+.row-2nd:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,484 @@
+.phone-settings {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    overflow: hidden;
+    display: none;
+}
+
+.phone-settings-header {
+    position: relative;
+    font-family: 'Samsung Sans thin';
+    font-size: 2.5vh;
+    top: 8%;
+    left: 0%;
+    width: 100%;
+    height: 5vh;
+    border-bottom: 0px;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 0vh;
+}
+
+.phone-settings-sector {
+    position: relative;
+    height: 82.5%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    top: 8%;
+}
+
+.phone-settings-selection {
+    position: relative;
+    width: 28.9vh;
+    height: 6vh;
+    line-height: 4vh;
+    padding: 1vh;
+    font-size: 2vh;
+    padding-left: 2vh;
+    color: rgb(36, 36, 36);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Samsung Sans thin';
+    font-weight: 600;
+}
+
+.darkphone-settings-selection {
+    color: rgb(235, 235, 235)!important;
+    border-bottom: 1px solid rgba(95, 95, 95, 0.2);
+}
+
+.phone-settings-selection>i {
+    color: #d3d3d5;
+}
+
+.phone-settings-selection>i:hover {
+    color: rgb(27, 131, 216);
+}
+
+.phone-settings-switch {
+    position: absolute;
+    right: 2vh!important;
+    top: 2.25vh;
+}
+
+.phone-settings-wallpaper {
+    position: absolute;
+    top: 20vh;
+    left: 2vh;
+    display: none;
+    border-radius: 1vh;
+    width: 24vh;
+    height: 16vh;
+    box-shadow: 2px 2px 2px 2px rgba(32, 32, 32, 0.2);
+    background-color: rgba(218, 218, 218, 1);
+}
+
+.darkminiinput {
+    background-color: rgb(35, 35, 35);
+}
+
+.phone-settings-wallpaper-headline {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    line-height: 5vh;
+    font-size: 2.5vh;
+    text-align: center;
+    font-family: 'Samsung Sans thin';
+    font-weight: 600;
+}
+
+.phone-settings-wallpaper-headline>i:hover {
+    color: rgb(27, 131, 216);
+}
+
+.pswdiv {
+    position: relative;
+    height: 4vh;
+    width: 90%;
+    font-family: 'Samsung Sans thin';
+    font-weight: 600;
+    left: 5%;
+    top: 0vh;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pswsubmit {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    font-family: 'Samsung Sans thin';
+    font-weight: 600;
+    left: 0%;
+    top: 1vh;
+}
+
+#psw {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 2vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.pswsubmitbutton {
+    position: relative;
+    background-color: rgb(27, 131, 216);
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: Samsung Sans Regular;
+    font-weight: 400;
+    border-radius: 0.25vh;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pswsubmitbutton:hover {
+    color: rgb(27, 131, 216);
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.cl-switch input[type="checkbox"] {
+    display: none;
+    visibility: hidden;
+}
+
+.cl-switch .switcher {
+    display: inline-block;
+    border-radius: 100px;
+    width: 35px;
+    height: 15px;
+    background-color: #ccc;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.cl-switch .switcher:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    margin-top: -2.5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 0;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.cl-switch .switcher:active:before {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 0 10px rgba(63, 81, 181, 0.3);
+    transition: all, 0.1s;
+}
+
+.cl-switch .label {
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.cl-switch input[type="checkbox"]:checked+.switcher {
+    background-color: #8591d5;
+}
+
+.cl-switch input[type="checkbox"]:checked+.switcher:before {
+    left: 100%;
+    margin-left: -20px;
+    background-color: #3f51b5;
+}
+
+.cl-switch [disabled]:not([disabled="false"])+.switcher {
+    background: #ccc !important;
+}
+
+.cl-switch [disabled]:not([disabled="false"])+.switcher:active:before {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.cl-switch [disabled]:not([disabled="false"])+.switcher:before {
+    background-color: #e2e2e2 !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.cl-switch.cl-switch-large .switcher {
+    width: 52px;
+    height: 22px;
+}
+
+.cl-switch.cl-switch-large .switcher:before {
+    width: 30px;
+    height: 30px;
+    margin-top: -4px;
+}
+
+.cl-switch.cl-switch-large .label {
+    font-size: 18px;
+}
+
+.cl-switch.cl-switch-large input[type="checkbox"]:checked+.switcher:before {
+    margin-left: -30px;
+}
+
+.cl-switch.cl-switch-xlarge .switcher {
+    width: 87px;
+    height: 37px;
+}
+
+.cl-switch.cl-switch-xlarge .switcher:before {
+    width: 50px;
+    height: 50px;
+    margin-top: -6px;
+}
+
+.cl-switch.cl-switch-xlarge .label {
+    font-size: 24px;
+}
+
+.cl-switch.cl-switch-xlarge input[type="checkbox"]:checked+.switcher:before {
+    margin-left: -50px;
+}
+
+.cl-switch.cl-switch-black input[type="checkbox"]:checked+.switcher {
+    background-color: #676767;
+}
+
+.cl-switch.cl-switch-black input[type="checkbox"]:checked+.switcher:before {
+    background-color: #343434;
+}
+
+.cl-switch.cl-switch-black .switcher:active:before {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 0 10px rgba(52, 52, 52, 0.3);
+}
+
+.cl-switch.cl-switch-red input[type="checkbox"]:checked+.switcher {
+    background-color: #ffcece;
+}
+
+.cl-switch.cl-switch-red input[type="checkbox"]:checked+.switcher:before {
+    background-color: #ff6868;
+}
+
+.cl-switch.cl-switch-red .switcher:active:before {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 0 10px rgba(255, 104, 104, 0.3);
+}
+
+.cl-switch.cl-switch-green input[type="checkbox"]:checked+.switcher {
+    background-color: #77e4c0;
+}
+
+.cl-switch.cl-switch-green input[type="checkbox"]:checked+.switcher:before {
+    background-color: #29cc97;
+}
+
+.cl-switch.cl-switch-green .switcher:active:before {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 0 10px rgba(41, 204, 151, 0.3);
+}
+
+.cl-switch.cl-switch-orange input[type="checkbox"]:checked+.switcher {
+    background-color: #ffc166;
+}
+
+.cl-switch.cl-switch-orange input[type="checkbox"]:checked+.switcher:before {
+    background-color: #ff9800;
+}
+
+.cl-switch.cl-switch-orange .switcher:active:before {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 0 10px rgba(255, 152, 0, 0.3);
+}
+
+.cl-switch.ios .switcher {
+    width: 45px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #d3d3d5;
+    box-shadow: 0 0 0 0 #4bd964 inset;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.cl-switch.ios .switcher:before {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+    top: -1px;
+    right: -1px;
+    margin-right: 0;
+    border: 1px solid #d3d3d5;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.cl-switch.ios input[type="checkbox"]:checked+.switcher {
+    background-color: #fff;
+    box-shadow: 0 0 0 20px #4bd964 inset;
+}
+
+.cl-switch.ios input[type="checkbox"]:checked+.switcher:before {
+    right: 100%;
+    margin-right: -22px;
+    background-color: #fff;
+}
+
+.cl-switch.ios [disabled]:not([disabled="false"])+.switcher {
+    background: #ccc !important;
+}
+
+.cl-switch.ios [disabled]:not([disabled="false"])+.switcher:active:before {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.cl-switch.ios [disabled]:not([disabled="false"])+.switcher:before {
+    background-color: #e2e2e2 !important;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+.cl-switch.ios.cl-switch-large .switcher {
+    width: 62px;
+    height: 34px;
+}
+
+.cl-switch.ios.cl-switch-large .switcher:before {
+    width: 34px;
+    height: 34px;
+}
+
+.cl-switch.ios.cl-switch-large .label {
+    font-size: 18px;
+}
+
+.cl-switch.ios.cl-switch-large input[type="checkbox"]:checked+.switcher:before {
+    margin-right: -30px;
+}
+
+.cl-switch.ios.cl-switch-xlarge .switcher {
+    width: 80px;
+    height: 40px;
+}
+
+.cl-switch.ios.cl-switch-xlarge .switcher:before {
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+}
+
+.cl-switch.ios.cl-switch-xlarge .label {
+    font-size: 24px;
+}
+
+.cl-switch.ios.cl-switch-xlarge input[type="checkbox"]:checked+.switcher:before {
+    margin-right: -39px;
+}
+
+.cl-switch.ios.cl-switch-black .switcher {
+    box-shadow: 0 0 0 0 #343434 inset;
+}
+
+.cl-switch.ios.cl-switch-black input[type="checkbox"]:checked+.switcher {
+    box-shadow: 0 0 0 20px #343434 inset;
+    background: #ffffff;
+}
+
+.cl-switch.ios.cl-switch-black input[type="checkbox"]:checked+.switcher:before {
+    background-color: #fff;
+}
+
+.cl-switch.ios.cl-switch-black .switcher:active:before {
+    box-shadow: none;
+}
+
+.cl-switch.ios.cl-switch-red .switcher {
+    box-shadow: 0 0 0 0 #ff6868 inset;
+}
+
+.cl-switch.ios.cl-switch-red input[type="checkbox"]:checked+.switcher {
+    box-shadow: 0 0 0 20px #ff6868 inset;
+    background: #ffffff;
+}
+
+.cl-switch.ios.cl-switch-red input[type="checkbox"]:checked+.switcher:before {
+    background-color: #fff;
+}
+
+.cl-switch.ios.cl-switch-red .switcher:active:before {
+    box-shadow: none;
+}
+
+.cl-switch.ios.cl-switch-green .switcher {
+    box-shadow: 0 0 0 0 #29cc97 inset;
+}
+
+.cl-switch.ios.cl-switch-green input[type="checkbox"]:checked+.switcher {
+    box-shadow: 0 0 0 20px #29cc97 inset;
+    background: #ffffff;
+}
+
+.cl-switch.ios.cl-switch-green input[type="checkbox"]:checked+.switcher:before {
+    background-color: #fff;
+}
+
+.cl-switch.ios.cl-switch-green .switcher:active:before {
+    box-shadow: none;
+}
+
+.cl-switch.ios.cl-switch-orange .switcher {
+    box-shadow: 0 0 0 0 #ff9800 inset;
+}
+
+.cl-switch.ios.cl-switch-orange input[type="checkbox"]:checked+.switcher {
+    box-shadow: 0 0 0 20px #ff9800 inset;
+    background: #ffffff;
+}
+
+.cl-switch.ios.cl-switch-orange input[type="checkbox"]:checked+.switcher:before {
+    background-color: #fff;
+}
+
+.cl-switch.ios.cl-switch-orange .switcher:active:before {
+    box-shadow: none;
+}
+
+.switch-blue input[type="checkbox"]:checked+.switcher {
+    background: rgb(27, 131, 216);
+}
+
+.switch-blue input[type="checkbox"]:checked+.switcher:before {
+    background: rgb(22, 104, 170);
+}
+
+#phonesettingsnumbertext {
+    float: left;
+}
+
+#phonesettingsnumber {
+    float: right;
+}

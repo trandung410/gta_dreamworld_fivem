@@ -1,0 +1,116 @@
+.phone-radio {
+    height: 100%;
+    width: 100%;
+    background: rgb(253, 253, 253);
+    overflow: hidden;
+    display: none;
+}
+
+.phone-radio-sector {
+    display: block;
+    position: absolute;
+    height: 84%;
+    width: 100%;
+    top: 16%;
+}
+
+.phone-radio-list {
+    position: absolute;
+    height: 98.2%;
+    top: 0vh;
+    width: 99%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#phone-radio-return {
+    position: relative;
+    left: 3vh;
+    top: 0.5vh;
+    height: 3vh;
+    width: 3vh;
+}
+
+#phone-radio-return>i {
+    color: rgb(27, 131, 216);
+}
+
+#phone-radio-return>i:hover {
+    color: rgb(12, 12, 12)
+}
+
+.phone-radio-frequenz-inputs {
+    position: relative;
+    height: 6vh;
+    width: 100%;
+}
+
+.phone-radio-frequenz-input {
+    position: relative;
+    top: 1.5vh;
+    height: 4.5vh;
+    left: 5%;
+    font-family: 'Samsung Sans medium';
+    font-size: 1.75vh;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.phone-frequenz-button {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    font-family: 'Samsung Sans thin';
+    font-weight: 400;
+    left: 0%;
+    top: 1vh;
+}
+
+#phone-frequenz-join-button {
+    position: relative;
+    background-color: rgb(27, 131, 216);
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    font-weight: 400;
+    border-radius: 0.25vh;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#phone-frequenz-join-button:hover {
+    color: rgb(27, 131, 216);
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+#phone-frequenz-leave-button {
+    position: relative;
+    background-color: rgb(161, 25, 25);
+    width: 90%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Samsung Sans Regular';
+    font-weight: 400;
+    border-radius: 0.25vh;
+    box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#phone-frequenz-leave-button:hover {
+    color: rgb(161, 25, 25);
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}

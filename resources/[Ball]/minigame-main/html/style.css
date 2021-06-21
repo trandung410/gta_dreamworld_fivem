@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainContainer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    height: 750px;
+    width: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid cyan;
+    border-radius: 32px;
+}
+
+.pin {
+    height: 100%;
+    width: calc(500px /6);
+    background-color: cyan;
+    margin: 5px;
+    border: 2.5px solid cyan;
+    border-radius: 26px;
+    margin-left: 10px;
+}
+
+.pin:first-child {
+    margin-top: 10px;
+}
+
+.pin:last-child {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@600&display=swap');
+
+* {
+  font-family: 'Athiti', sans-serif;
+  /*text-align: center;*/
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--fadeTo-Color);
+}
+
+.bg {
+  /* background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(10, 10, 10) 40%, rgba(0,0,0,1) 100%);; */
+  background: linear-gradient(140deg, rgba(37,136,186,0.9) 0%, rgba(183,52,219,0.9)90%);
+  /*background: linear-gradient(60deg, rgba(37,136,186,0.9) 0%, rgba(183,52,219,0.9) 100%);**/
+  bottom:0;
+  left:-50%;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.logo {
+  width: 700px;
+  animation: slideInDown;
+  animation-duration: 1s; 
+}
+
+
+/* This changes all the animations globaly */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+
+#container {
+  /*text-shadow: 2px 2px 5px #424242;*/
+  position: absolute;
+  color: rgb(241, 235, 235);
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 75px;
+  text-align: center;
+}
+
+#bg { 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#bottom_nav {
+  width: 90%;
+  vertical-align: text-bottom;
+  position: fixed;
+  bottom:0px;
+  text-align: center;
+  z-index:9999;
+}
+
+
+.enable_music {
+  color: #e7e7e7;
+  font-family: 'Athiti', sans-serif;
+  text-align: center;
+  animation: zoomIn;
+  animation-duration: 1s; 
+
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  font-weight: 400;
+  /*margin-bottom: -500px;*/
+}
+
+.pozicija2 {
+  margin: 0;
+  font-size: 30px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}

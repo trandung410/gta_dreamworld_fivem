@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ESX NEW SHOP BY THANAUWT PROMRAUNGDET</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+</head>
+
+<body>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script>
+        function setInputFilter(textbox, inputFilter) {
+            ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
+                textbox.addEventListener(event, function() {
+                if (inputFilter(this.value)) {
+                    this.oldValue = this.value;
+                    this.oldSelectionStart = this.selectionStart;
+                    this.oldSelectionEnd = this.selectionEnd;
+                } else if (this.hasOwnProperty("oldValue")) {
+                    this.value = this.oldValue;
+                    this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                }
+                });
+            });
+        }
+        $(function () {
+            $('.modal').modal({
+                endingTop: '40%',
+                onOpenStart: function(){
+                    $("#txt_count").val("1");
+                    setTimeout(function() { 
+                        var CountInput = $('#txt_count');
+                        var strLength = CountInput.val().length * 2;
+                        CountInput.focus();
+                        CountInput[0].setSelectionRange(strLength, strLength);
+                }, 100);
+                }
+            });
+            setInputFilter(document.getElementById("txt_count"), function(value) {
+                return /^\d*\.?\d*$/.test(value);
+            });
+
+            $('#txt_count').on("keypress", function(e) {
+                if (e.keyCode == 13) {
+                    $("#item-submit").trigger('click');
+                    $('.modal').modal('close');
+                }
+            });
+
+        });
+    </script>
+
+    <div id="modal_count" class="modal" style="width: 400px;">
+        <div class="modal-content">
+            <input placeholder="Số lượng" id="txt_count" type="text">
+        </div>
+        <div class="modal-footer">
+            <a id="item-submit" class="modal-close waves-effect waves-green btn-flat white-text">ĐỒNG Ý</a>
+            <a class="modal-close waves-effect waves-red btn-flat white-text">Huỷ</a>
+        </div>
+    </div>
+
+    <div class="ui">
+        <div class="middle">
+            <div class="inventory">
+                <div id="col-inventory">
+                    <div class="header">
+                        Tạp hoá
+                    </div>
+                    <div id="ShopResult" class="row" style="margin:0;padding:0;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dialog">
+        <div id="nearPlayers">
+        </div>
+    </div>
+
+</body>
+
+</html>

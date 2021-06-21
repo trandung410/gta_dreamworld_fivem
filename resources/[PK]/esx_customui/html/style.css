@@ -1,0 +1,186 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+* {padding: 0; margin: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+
+.playerStats{
+	position: absolute;
+	left: 350px; /* Default: 350px */
+	bottom: 20px; /* Default: 20px */
+
+	left: 85%; /* (18.2% Right Side of Map) | (82.0% Right Side of Screen) | (2.7% Above Map)  */
+	bottom: 82%; /* (1.85% Default-Fix for all 16:9 resolutions) | (21.0% Above Map) */
+}
+
+.carStats{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+
+/*  */
+
+.stat{
+  position: relative;
+  bottom: -7px;
+  left: 9px;
+  font-size: 16px;
+  font-family: "Purista", sans-serif;
+  margin-bottom: -5px;
+}
+
+.stat .icon{
+	height: 30px;
+	width: 30px;
+	background: linear-gradient(to left, rgba(0,0,0,0) 100%,rgba(0,0,0,0.65) 100%);
+	border-radius: 50%;
+	position: relative;
+	display: inline-block;
+	right: 15px;
+}
+
+.stat .icon i, .stat .icon img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.stat .icon img{
+	height: 18px;
+	width: 18px;
+}
+
+
+.stat span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: -10px;
+}
+
+
+
+.carStats .stat{
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+	text-align: right;
+}
+
+.carStats .stat .icon{
+	float: right;
+	right: 0px;
+	left: 15px;
+}
+
+.carStats .stat span{
+	white-space: nowrap;
+	right: 20px;
+}
+
+.status{
+	display: flex;
+	width: 195px;
+	position: relative;
+	left: -15px;
+	justify-content: space-between;
+}
+
+.veh-gas{
+	display: flex;
+	width: 235px;
+	position: relative;
+	right: -15px;
+	justify-content: space-between;
+}
+
+
+.vert-stat{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	position: relative;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.vert-stat .bg{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.vert-stat img{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container{
+  position: relative;
+  float: right;
+  margin-top: 3%;
+  color: #fff;
+  width: 255px;
+  height: 140px;
+  margin-right: 18px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.473), rgba(0, 0, 0, 0));
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#emprego{
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.8px;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+/* .status{
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-size: 12px;
+  font-family: "Purista", sans-serif;
+} */
+/* .hunger{
+  position: absolute;
+  bottom: 11px;
+  left: 45px;
+}
+.thirst{
+  position: absolute;
+  bottom: 11px;
+  left: 26px;
+}
+#top{
+  position: absolute;
+  margin-left: 45px;
+  bottom: -.3px;
+}
+#flat{
+  height: 51px;
+  width: 19px;
+  margin-top:-2px;
+    margin-bottom:-8px;
+  margin-right: 33px;
+} */
+
+
+#gas{
+	position: absolute;
+	right: 100px;
+	bottom: 50px;
+
+}
+#hora{
+  font-family: "Purista", sans-serif;
+  font-size:2rem;
+  float: right;
+  margin-top: 50px;
+  margin-left: 40px;
+}

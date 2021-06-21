@@ -1,0 +1,80 @@
+/* === Content === */
+.custom .box-content {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #b734db,
+    #2588ba,
+    transparent
+  );
+  border-radius: 3px;
+  transition: 0.07s;
+  /* border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;  */
+}
+/* === prograss === */
+.custom .box-content .box-prograss .prograss {
+  transition: 0.07s;
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #2b2929 40%,
+    #131313 50%,
+    transparent
+  );
+}
+/* === prograss load === */
+.prograss-load {
+  background-image: linear-gradient(
+    to top,
+    #c7c4c4 0%,
+    #dfdcdc 52%,
+    #ebebeb 100%
+  );
+  /* box-shadow: 1px 1px 8px 1px #ffffff; */
+  box-shadow: 1px 0px 3px 0px #000;
+}
+
+/* === prograss Point === */
+.custom .box-content .box-prograss .prograss .prograss-point {
+  background-image: linear-gradient(
+    to top,
+    #fffefe 0%,
+    #b5b5b5 1%,
+    #e0e0e0 100%
+  );
+  opacity: 0.85;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 3px;
+}
+/* isInPoint */
+.custom .box-content .box-prograss .prograss .prograss-point.active {
+  background-image: linear-gradient(
+    to top,
+    #ffffff 0%,
+    #a71409 1%,
+    #d80f00 100%
+  );
+  opacity: 1;
+}
+
+/* === status checkPoint === */
+.checkPoint .point {
+  background: linear-gradient(to bottom, #bfbfbf 0%, #424242 40%, #6f6f6f 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.8);
+}
+/* type success */
+.checkPoint.type-success .point.active {
+  background-image: linear-gradient(to right, #17d61f 0%, #076b0b 100%);
+}
+/* type failed */
+.checkPoint.type-failed .point.active {
+  background-image: linear-gradient(to right, #ff2212 0%, #940a00 100%);
+}

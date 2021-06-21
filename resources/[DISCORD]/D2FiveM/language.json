@@ -1,0 +1,53 @@
+{
+	"CommandList" : "Danh sách các lệnh",
+
+	"cmdlistDesc" : "Hiển thị danh sách các lệnh này.",
+	"helpDesc" : "Hiển thị danh sách lệnh.",
+	"sendDesc" : "Gửi tin nhắn trò chuyện đến game.",
+	"getclientsDesc" : "Hiển thị danh sách người chơi kết nối đến server.",
+	"kickDesc" : "Kick người chơi",
+	"banDesc" : "Ban người chơi",
+	"resourcestopDesc" : "Stop a resource on the FiveM server.",
+	"resourcestartDesc" : "Start a resource on the FiveM server.",
+	"resourcerestartDesc" : "Restart a resource on the FiveM server.",
+	"resourcerefreshDesc" : "Refresh the resource list if some resources aren't detected by the FiveM server.",
+	"resourcelistDesc" : "Get a list of all available resources on the FiveM server.",
+	
+	"sendNoMessage" : "Vui lòng nhập tin nhắn!",
+	"sendMessageSent" : "Tin nhắn đã gửi!",
+	"sendError" : "ERROR!\nKhông thể gửi tin nhắn!",
+
+	"getclientsConnectedClients" : "Danh sách người chơi online",
+	"getclientsNoClients" : "Có vẻ như không có người nào online ...",
+
+	"kickKicked" : "Lệnh được thực thi! người chơi kick!",
+
+	"banBanned" : "Lệnh được thực thi! người chơi banned!",
+
+	"kickbanElse" : "Không tìm thấy ID",
+	"kickbanNoServerID" : "Vui lòng nhập ID !",
+	"kickbanNoReason" : "Vui lòng thêm một lý do sau ID! ",
+	
+	"kickLogKicked" : "kicked",
+	"banLogBanned" : "banned",
+	"kickbanLogReason" : "Reason",
+	"banLogBannedDuration" : "Duration",
+	"banLogBannedHours" : "Hour[s]",
+	"banLogBannedForever" : "Forever",
+	
+	"resourcestopStopped" : "Command executed! The resource is stopped.",
+	"resourcestartStarted" : "Command executed! The resource is started.",
+	"resourcerestartRestarted" : "Command executed! The resource is restarted.",
+	"resourcerefreshRefreshed" : "Command executed! The resource list should be refreshed.",
+	"resourceNoSpace" : "ERROR!\nThe resource name can't contain spaces.",
+	"resourceError" : "ERROR!",
+	
+	"commandNoArgs" : "ERROR!\nThis command doesn't take any arguments.",
+	
+	"Kicked" : "Kicked",
+	"Banned" : "Banned",
+	"Reason" : "Reason",
+	"Duration" : "Duration",
+	"Hours" : "Hour[s]",
+	"Forever" : "Forever"
+}

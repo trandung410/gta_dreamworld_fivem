@@ -1,0 +1,99 @@
+-- checkTime = 30 --Minutes
+-- deleteTime = 60 --Seconds
+
+-- local enumerator = {
+-- 	__gc = function(enum)
+-- 		if enum.destructor and enum.handle then
+-- 			enum.destructor(enum.handle)
+-- 		end
+-- 		enum.destructor = nil
+-- 		enum.handle = nil
+-- 	end
+-- }
+
+-- local function getEntities(initFunc, moveFunc, disposeFunc)
+-- 	return coroutine.wrap(function()
+-- 		local iter, id = initFunc()
+-- 		if not id or id == 0 then
+-- 			disposeFunc(iter)
+-- 			return
+-- 		end
+    
+-- 		local enum = {handle = iter, destructor = disposeFunc}
+-- 		setmetatable(enum, enumerator)
+    
+-- 		local next = true
+-- 		repeat
+-- 		coroutine.yield(id)
+-- 		next, id = moveFunc(iter)
+-- 		until not next
+  
+-- 		enum.destructor, enum.handle = nil, nil
+-- 		disposeFunc(iter)
+-- 	end)
+-- end
+
+-- function getVehicles()
+--   return getEntities(FindFirstVehicle, FindNextVehicle, EndFindVehicle)
+-- end
+
+-- Citizen.CreateThread(function()
+-- 	while true do
+-- 		Citizen.Wait(checkTime * 60000)
+-- 		TriggerEvent('chatMessage', "[SYSTEM]", {255, 255, 0}, "Hệ thống sẽ xoá xe không có người ngồi trong "..deleteTime.." giây nữa! (Vui lòng không xuống xe)")
+-- 		SetTimeout(deleteTime * 1000, function()
+-- 			local x, y, z = table.unpack(GetEntityCoords(PlayerPedId(), true))
+-- 			ClearAreaOfEverything(x, y, z, 500, false, false, false, false)
+-- 			theVehicles = getVehicles()
+-- 			TriggerEvent('chatMessage', "[SYSTEM]", {0, 255, 0}, "Hệ thống đã xoá xe thành công")
+-- 			for veh in theVehicles do
+-- 				if ( DoesEntityExist( veh ) ) then 
+-- 					if((GetPedInVehicleSeat(veh, -1)) == false) or ((GetPedInVehicleSeat(veh, -1)) == nil) or ((GetPedInVehicleSeat(veh, -1)) == 0)then
+-- 						Citizen.InvokeNative( 0xEA386986E786A54F, Citizen.PointerValueIntInitialized( veh ) )
+-- 					end
+-- 				end
+-- 			end
+-- 		end)
+-- 	end
+-- end)
+
+-- Citizen.CreateThread(function()
+--     -- Other stuff normally here, stripped for the sake of only scenario stuff
+--     local SCENARIO_TYPES = {
+--         "WORLD_VEHICLE_MILITARY_PLANES_SMALL", -- Zancudo Small Planes
+--         "WORLD_VEHICLE_MILITARY_PLANES_BIG", -- Zancudo Big Planes
+--     }
+--     local SCENARIO_GROUPS = {
+--         2017590552, -- LSIA planes
+--         2141866469, -- Sandy Shores planes
+--         1409640232, -- Grapeseed planes
+--         "ng_planes", -- Far up in the skies jets
+--     }
+--     local SUPPRESSED_MODELS = {
+--         "SHAMAL", -- They spawn on LSIA and try to take off
+--         "LUXOR", -- They spawn on LSIA and try to take off
+--         "LUXOR2", -- They spawn on LSIA and try to take off
+--         "JET", -- They spawn on LSIA and try to take off and land, remove this if you still want em in the skies
+--         "LAZER", -- They spawn on Zancudo and try to take off
+--         "TITAN", -- They spawn on Zancudo and try to take off
+--         "BARRACKS", -- Regularily driving around the Zancudo airport surface
+--         "BARRACKS2", -- Regularily driving around the Zancudo airport surface
+--         "CRUSADER", -- Regularily driving around the Zancudo airport surface
+--         "RHINO", -- Regularily driving around the Zancudo airport surface
+--         "AIRTUG", -- Regularily spawns on the LSIA airport surface
+--         "RIPLEY", -- Regularily spawns on the LSIA airport surface
+--     }
+
+--     while true do
+--         for _, sctyp in next, SCENARIO_TYPES do
+--             SetScenarioTypeEnabled(sctyp, false)
+--         end
+--         for _, scgrp in next, SCENARIO_GROUPS do
+--             SetScenarioGroupEnabled(scgrp, false)
+--         end
+--         for _, model in next, SUPPRESSED_MODELS do
+--             SetVehicleModelIsSuppressed(GetHashKey(model), true)
+--         end
+--         Citizen.Wait(10000)
+--     end
+-- end)

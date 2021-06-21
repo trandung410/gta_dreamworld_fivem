@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="grid.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+  <div id="ui">
+    <div class="playerStats">
+      <div class="container">
+        <span id="emprego"></span>
+        <span id="hora">
+          <div class="hora">12:00</div>
+        </span>
+
+        <div class="stat" id="job">
+          <div class="icon"><img src="img/jobs/unemployed.png">
+            <!--<i class="fa fa-briefcase" style="color: #FFB300;"></i>-->
+          </div><span>Jobless - Unemployed</span>
+        </div>
+        <div class="stat" id="money">
+          <div class="icon"><img src="img/wallet.png">
+            <!--<i class="fa fa-money" style="color: #4CAF50"></i>-->
+          </div><span>$0</span>
+        </div>
+        <div class="stat" id="bankmoney">
+          <div class="icon"><img src="img/credit-card.png">
+            <!--<i class="fa fa-credit-card-alt" style="font-size: 14px; color: #2196F3;"></i>-->
+          </div><span>$0</span>
+        </div>
+        <div class="stat" id="dirtymoney">
+          <div class="icon"><img src="img/money-bag.png">
+            <!--<i class="fa fa-money" style="color: #f44336"></i>-->
+          </div><span style="color: #f44336;">$0</span>
+        </div>
+      </div>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+      <script>
+        $(document).ready(function () {
+          window.addEventListener('message', function (event) {
+            var data = event.data;
+            $(".container").css("display", data.show ? "none" : "block");
+            var hora = $(".hora");
+            var job = $(".job");
+            var job2 = $(".job2");
+            hora.text(data.hora);
+            job.text(data.label);
+            job2.text(data.label2);
+          });
+        });
+      </script>
+</body>
+</html>

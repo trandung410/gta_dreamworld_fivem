@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+html{
+    font-size: 20px;
+}
+body{
+    font-family: 'Anton', sans-serif;
+}
+#app{
+    display: none;
+}
+.title{
+    color:#fb3640 !important;
+    text-transform: uppercase;
+    right: 2rem;
+    font-size: 6rem;
+    padding: 1rem;
+    font-style: italic;
+    text-align: right;
+    opacity: 80%;
+}
+.header{
+    color: #ffc93c;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 1rem;
+    
+}
+.board{
+    background-color: #2228319d;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    transform: perspective(2500px);
+}
+.board.left{
+    transform: perspective(2500px) rotateY(15deg)
+}
+.board.right{
+    transform: perspective(2500px) rotateY(-15deg)
+}
+.content{
+    text-transform: uppercase;
+    color: white;
+    padding: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
+}
+.content-info{
+    float: right;
+}
+#reason{
+    padding: 0.5rem;
+    resize: none;
+}
+.container-fluid {
+    position: absolute;
+    /* top: 50%;
+    left: 50%;
+    margin-top: -35vh;
+    margin-left: -25vw;
+    width: 50vw;
+    height: 70vh; */
+    width: 100%;
+    height: 100%;
+    background-color: #252525ea;
+    background-image: url(bg.png);
+    background-size: cover;
+    opacity: 50;
+}
+.main{
+    height: 100%;
+}
+.vehicle-img{
+    width: 400px;
+}
+.notification{
+    width: 100%;
+    padding: 1rem;
+    color: #fb3640;
+    text-transform: uppercase;
+}
+textarea:focus, input:focus{
+    outline: 0;
+}
+textarea, input{
+    background-color: #2228319d;
+    border: none;
+    color: white;
+}
+input {
+    width: 100%;
+    padding: 1rem;
+    transition: 0.5s;
+    color: #ffc93c;
+}
+*:focus {
+    outline: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.bt{
+    position: absolute;
+    width: 100%;
+    padding: 0 !important;
+    bottom: 0;
+}
+.bt .col{
+    padding: 0 !important;
+}
+.btn{
+    text-transform: uppercase;
+    color: white;
+    border-radius: 0%;
+    padding: 1rem;
+    width: 10rem;
+}
+.btn.left{
+    background-color: #29bb89;
+    clip-path: polygon(0% 0, 85% 0%, 100% 100%, 0% 100%);
+}
+.btn.right{
+    background-color: #fb3640;
+    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+    float: right;
+}
+.btn:hover{
+    background-color: #2228319d;
+    color: white;
+}
+.error{
+    background-color: #fb3640;
+}

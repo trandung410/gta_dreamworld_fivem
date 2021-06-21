@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+    <startFrom value="2000" />
+    <proxies>
+        <item>int_luxury_milo_</item>
+        <item>slb2k11_jva_office_milo_</item>
+        <item>slb2k11_jva_entrance_milo_</item>
+    </proxies>
+</SInteriorOrderData>
+

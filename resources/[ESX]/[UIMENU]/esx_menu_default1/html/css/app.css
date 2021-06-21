@@ -1,0 +1,115 @@
+@font-face {
+	font-family: bankgothic;
+	src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+	font-family: pcdown;
+	src: url('../fonts/pdown.ttf');
+}
+
+*{
+  transition: background .5s;
+}
+.menu {
+    overflow: none;
+	font-family: 'Lato', 'Athiti',sans-serif;
+	min-width: 350px;
+	color: #f5f5f5;
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+	position: absolute;
+	background: linear-gradient(90deg, rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.7) 40%,rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.0) 100%);
+}
+
+.material-icons.middle {
+  vertical-align: middle;
+}
+
+.menu.align-left {
+	left: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+	left: 40;
+	top: 40;
+}
+
+.menu.align-top {
+	left: 50%;
+	top: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-top-right {
+	right: 10;
+	top: 40;
+}
+
+.menu.align-right {
+	right: 40;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.menu.align-bottom-right {
+	right: 40;
+	bottom: 40;
+}
+
+.menu.align-bottom {
+	left: 50%;
+	bottom: 40;
+	transform: translate(-50%, 0);
+}
+
+.menu.align-bottom-left {
+	left: 40;
+	bottom: 40;
+}
+
+.menu.align-center {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu .head {
+	font-size: 24px;
+	font-weight: 500;
+	/*background-image: linear-gradient(to right, #D2901C , #AC5407);*/
+	/* background: linear-gradient(90deg,rgba(183,52,219,0.9) 0%,rgba(37,136,186,0.9)80%,rgba(37,136,186,0.0) 100%);  */
+	background: linear-gradient(90deg, rgba(0,0,0,0.0) 0%,rgba(0,0,0,0.7) 40%,rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.0) 100%);
+	text-align: center;
+	padding: 7px;
+}
+
+.menu .menu-items {
+	max-height: 600px;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.menu .menu-items .menu-item {
+	display: block;
+	height:25px;
+	padding: 2px 5px;
+	line-height: 30px;
+	color: #f5f5f5;
+	text-align: center;
+	font-size: 16px;
+}
+
+.menu .menu-items .right-label {
+  position: absolute;
+  right: 5px;
+
+}
+
+.menu .menu-items .menu-item.selected {
+    color: black;
+	/*background: linear-gradient(-90deg, rgba(37,136,186,0.9) 0%, rgba(183,52,219,0.9) 100%);*/
+	background: linear-gradient(90deg, rgba(0,0,0,0.0) 0%,rgba(255,255,255,0.7) 40%,rgba(255,255,255,0.7) 60%, rgba(0,0,0,0.0) 100%);
+}
+

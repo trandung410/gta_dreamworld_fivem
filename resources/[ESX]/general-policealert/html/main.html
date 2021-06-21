@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+		<script src="https://kit.fontawesome.com/348e1bce98.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		window.addEventListener('message', function(event) {
+			if (event.data.type == "playsound") {
+				var msg = new Audio('./main.mp3');
+				msg.volume = 0.0;
+				msg.play();
+			}
+		});
+	</script>
+</html>

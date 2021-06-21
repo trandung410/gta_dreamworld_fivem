@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    overflow: hidden;
+    height:1080px;
+    width:100%;
+    /* animation: fadeInUp;
+    animation-duration: 2s; */
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*status*/
+#thirst {
+    position: absolute;
+    right:7.7%;
+	bottom: 9.1%;
+    width: 4.5%;
+    height: 1.4%;
+    padding: 0;
+    float:left;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 2px solid #00b7ff ;
+    transform: skewY(4deg);
+}
+
+#hunger {
+    position: absolute;
+    right: 2.95%;
+	bottom: 8.4%;
+    width: 4.6%;
+    height: 1.5%;
+    padding: 0;
+    float:left;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 2px solid #00b7ff ;
+    transform: skewY(4deg);
+}
+
+
+#heal {
+    position: absolute;
+    right: 3.0%;
+    bottom: 10.3%;
+    width: 9.3%;
+    height: 1.5%;
+    padding: 0;
+    float:left;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    border-right: 2px solid #00b7ff ;
+    transform: skewY(4deg);
+}
+
+#armor {
+    position: absolute;
+    right: 2.95%;
+    bottom: 5.2%;
+    width: 7.0%;
+    height: 1.5%;
+    padding: 0;
+    float:left;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 2px solid #00b7ff ;
+    transform: skewY(4deg);
+    animation: fadeIn 0.5s;
+
+
+}
+
+#dive {
+    position: absolute;
+    right: 2.95%;
+    bottom: 6.9%;
+    width: 7.0%;
+    height: 1.5%;
+    padding: 0;
+    float:left;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 2px solid #00b7ff ;
+    transform: skewY(4deg);
+    animation: fadeIn 0.5s;
+}
+
+#stamina {
+    position: absolute;
+    right: 5.65%;
+    bottom: 11.7%;
+    width: 2.90%;
+    height: 1.5%;
+    padding: 0;
+    float:left;
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    border-right: 2px solid #00b7ff ;
+    transform: skewY(4deg);
+    animation: fadeIn 0.5s;
+}
+
+#id {
+    position: absolute;
+    right: 2.95%;
+    bottom: 11.4%;
+    width: 2.50%;
+    height: 1.5%;
+    padding: 0;
+    float:left;
+    background: rgba(0, 0, 0, 0.3);
+    border-right: 2px solid #00b7ff ;
+    transform: skewY(4deg);
+}
+
+#playerid {
+    position: absolute;
+    right: 10.5%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 10px;
+    color: white;
+}
+
+
+
+#boxHunger, #boxThirst {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+#healtlevel {
+    position: absolute;
+    right: 11.5%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 10px;
+    color: white;
+}
+
+#armorlevel {
+    position: absolute;
+    right: 20%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 10px;
+    color: white;
+}
+
+
+#staminalevel {
+    position: absolute;
+    right: 33%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 10px;
+    color: white;
+
+}
+
+#hungerlevel {
+    position: absolute;
+    right: 28%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 10px;
+    color: white;
+
+}
+
+#waterlevel {
+    position: absolute;
+    right: 25%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 10px;
+    color: white;
+
+}
+
+
+#divelevel {
+    position: absolute;
+    right: 20%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 10px;
+    color: white;
+
+}
+
+/*icon*/
+.fas.fa-hamburger {
+    position: absolute;
+    right: 10.7%;
+    bottom: 8.4%;
+    opacity: 1.0;
+    z-index: 500;
+
+}
+
+.fas.fa-beer {
+    position: absolute;
+    right: 6.6%;
+    bottom: 15%;
+    opacity: 1.0;
+    z-index: 500;
+
+}
+
+.fas.fa-shield-alt {
+    position: absolute;
+    right: 6.5%;
+    opacity: 1.0;
+    z-index: 500;
+
+}
+
+.fas.fa-heart {
+    position: absolute;
+    right: 3.5%;
+    bottom: 10.0%;
+    opacity: 1.0;
+    z-index: 500;
+
+}
+
+.fas.fa-bolt {
+    position: absolute;
+    right: 9.8%;
+    bottom: 14.5%;
+    opacity: 1.0;
+    z-index: 500;
+
+}
+
+.fas.fa-swimmer {
+    position: absolute;
+    right: 3.8%;
+    bottom: 14.5%;
+    opacity: 1.0;
+    z-index: 500;
+
+}
+
+
+
+
+/*heal,armor*/
+#box {
+    background: linear-gradient(130deg, rgba(183,52,219,0.7) 0%, rgba(18, 158, 228, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+#boxArmor {
+    background: linear-gradient(130deg, rgba(183,52,219,0.7) 0%, rgba(18, 158, 228, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+#boxHunger {
+    background: linear-gradient(130deg, rgba(183,52,219,0.7) 0%, rgba(18, 158, 228, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s;
+}
+#boxThirst {
+    background: linear-gradient(130deg, rgba(183,52,219,0.7) 0%, rgba(18, 158, 228, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+#boxStamina {
+    background: linear-gradient(130deg, rgba(183,52,219,0.7) 0%, rgba(18, 158, 228, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+#boxDive {
+    background: linear-gradient(130deg, rgba(183,52,219,0.7) 0%, rgba(18, 158, 228, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+
+#boxid {
+    background: linear-gradient(130deg, rgba(183,52,219,0.7) 0%, rgba(18, 158, 228, 0.7) 100%);
+    width: 100%;
+    height: 100%;
+    transition: width 0.3s;
+}
+

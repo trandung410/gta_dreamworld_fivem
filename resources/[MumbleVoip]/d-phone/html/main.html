@@ -1,0 +1,914 @@
+<html>
+
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- CDN's -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+    <!-- Color CDN -->
+
+    <link rel="stylesheet" href="./css/business.css">
+    <link rel="stylesheet" href="./css/call.css">
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/message.css">
+    <link rel="stylesheet" href="./css/notification.css">
+    <link rel="stylesheet" href="./css/radio.css">
+    <link rel="stylesheet" href="./css/settings.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/tooltip.css">
+    <link rel="stylesheet" href="./css/twitter.css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="./img/samsung-s10.png" class="phone-frame">
+        <div class="phone-container phone-background">
+            <div class="phone-header">
+                <div id="phone-time">08:05</div>
+                <div id="phone-icons">
+                    <i class="fas fa-signal" id="phone-signal" data-toggle="tooltip" data-placement="left"></i>
+                    <i class="fas fa-battery-three-quarters" id="phone-battery"></i>
+                </div>
+            </div>
+
+            <div class="phone-applications">
+                <div class="phone-footer-applications">
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="1" style="background: linear-gradient(to bottom, #11a819 0%, #22e41b 100%); margin-left: 0vh; margin-top: 1vh; " title="call" tooltipText="call" tooltipPos="top"
+                        data-app="call">
+                        <i class="ApplicationIcon fas fa-phone" style="transform: rotate(100deg);"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="2" style="background: linear-gradient(to bottom, #fa5407 0%, #ff4800 100%); margin-top: 1vh;" title="contacts" data-app="contacts">
+                        <i class="ApplicationIcon fas fa-address-book"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="3" style="background: linear-gradient(to bottom, #11a855 0%, #12640f 100%); margin-top: 1vh;" title="messages" data-app="messages">
+                        <i class="ApplicationIcon fas fa-comment-alt"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="4" style="background: linear-gradient(to bottom, #3b3b3b 0%, #1b1b1b 100%); margin-top: 1vh;" title="settings" data-app="settings">
+                        <i class="ApplicationIcon fas fa-cogs"></i>
+                    </div>
+                </div>
+
+                <div class="phone-home-applications">
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="5" style="background: linear-gradient(to bottom, #2664eb 0%, #2d12c7 100%);" title="services" data-app="services">
+                        <i class="ApplicationIcon fas fa-info"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" id="businessicon" data-placement="bottom" data-appslot="6" style="background: linear-gradient(to bottom, #8c47fc 0%, #6612c7 100%);" title="business" data-app="business">
+                        <i class="ApplicationIcon fas fa-briefcase"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="7" style="background: linear-gradient(to bottom, #1cddff 0%, #11a5a5 100%);" title="radio" data-app="radio">
+                        <i class="ApplicationIcon fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="8" style="background: linear-gradient(to bottom, #d6d6d6 0%, #b4b4b4 100%);" title="camera" data-app="camera">
+                        <i class="ApplicationIcon fas fa-camera" style="color: rgb(24, 24, 24);"></i>
+                    </div>
+                    <div class="phone-application" data-toggle="tooltip" data-placement="bottom" data-appslot="9" style="background: linear-gradient(to bottom, #319ffa 0%, #006eff 100%);" title="twitter" data-app="twitter">
+                        <i class="ApplicationIcon fab fa-twitter"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="phone-call-app">
+                <div class="phone-call-incoming">
+                    <div class="phone-call-incoming-title">Eingehender Anruf</div>
+                    <div class="phone-call-incoming-caller" id="phone-call-incoming-caller">Test Test</div>
+
+
+                    <i class="fas fa-phone" id="incoming-answer"></i>
+                    <i class="fas fa-phone" id="incoming-deny"></i>
+                </div>
+
+                <div class="phone-call-outgoing">
+                    <div class="phone-call-outgoing-title">Ausgehender Anruf</div>
+                    <div class="phone-call-outgoing-caller" id="phone-call-outgoing-caller">Test Test</div>
+
+                    <i class="fas fa-phone" id="outgoing-cancel"></i>
+                </div>
+
+                <div class="phone-call-ongoing">
+                    <div class="phone-call-ongoing-title"> Aktiver Anruf</div>
+                    <div class="phone-call-ongoing-caller" id="phone-call-ongoing-caller">Test Test</div>
+                    <div class="phone-call-ongoing-time" id="phone-call-ongoing-time">00:00</div>
+
+                    <i class="fas fa-phone" id="ongoing-cancel"></i>
+                </div>
+            </div>
+
+            <div class="phone-app">
+                <div class="phone-app-header">
+                    <div id="phone-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phone-contact-headline"> </div>
+                    <i id="phone-edit" class="fas fa-pen" style="display: none; position: absolute; right: 3vh;  top: 0.5vh;color: rgb(27, 131, 216)"></i>
+                    </p>
+                </div>
+
+                <div class="phone-contacts">
+                    <div class="phone-contact-list">
+                        <div class="phone-contact" data-contactid="1">
+                            <i class="phone-contact-favourite far fa-star"></i>
+                            <div class="phone-contact-name">Pieter Post</div>
+                            <div class="phone-contact-actions"><i class="fas fa-chevron-right"></i></div>
+
+                            <div class="phone-contact-action-buttons">
+                                <i class="fas fa-phone-volume"></i>
+                                <i class="fas fa-comment"></i>
+                                <i class="fas fa-user-edit"></i>
+                            </div>
+                        </div>
+                        <div class="phone-contact" data-contactid="1">
+                            <div class="phone-contact-name">Pieter Post</div>
+                            <div class="phone-contact-actions"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                    <div class="phone-contact-add">
+                        <i class="fas fa-plus" style="font-size: 1.6vh; margin-top: 1.2vh"></i>
+                    </div>
+                </div>
+
+                <div class="phone-contacts-information">
+                    <div class="pcihead" id="pciheadoverview">
+
+                    </div>
+                    <div class="pciname">
+                        <div id="pcinameguy">
+                            <font id="pcinamee"> MOIN MEISTER </font>
+                            <div class="pciiconslist">
+                                <div id="pcicall" class="pciicon">
+                                    <i class="fas fa-phone" id="pciphone">
+
+                                    </i>
+                                </div>
+                                <div id="pcimessage" class="pciicon">
+                                    <i class="fas fa-comment-dots">
+
+                                    </i>
+                                </div>
+                                <div id="pcifavourit" class="pciicon">
+                                    <i class="fas fa-star">
+
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pcirest">
+                        <div id="pcinumber">
+                            <font id="pcinumbertext">
+
+                            </font>
+                            <font id="pcinumberr"> 187187 </font>
+                        </div>
+                        <div id="pcicall2" class="pcihover">
+
+                        </div>
+                        <div id="pcimessage2" class="pcihover">
+
+                        </div>
+                        <div id="pcifavourit2" class="pcihover">
+
+                        </div>
+                        <div id="pcigps" class="pcihover">
+
+                        </div>
+                        <div id="pcishare" class="pcihover">
+
+                        </div>
+                        <div id="pcidelete">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-contacts-add">
+                    <div class="pcihead" id="pciheadadd">
+
+                    </div>
+                    <div class="pciinputdiv">
+                        <input id="pciinputname" class="pciinput">
+                    </div>
+                    <div class="pciinputdiv">
+                        <input id="pciinputnumber" class="pciinput">
+                    </div>
+                    <div class="pcisubmit">
+                        <button id="pciinputsubmit">
+                            
+                        </button>
+                    </div>
+                </div>
+
+                <div class="phone-contacts-edit">
+                    <div class="pcihead" id="pciheadedit">
+
+                    </div>
+                    <div class="pciinputdiv">
+                        <input id="pciinputname2" class="pciinput">
+                    </div>
+                    <div class="pciinputdiv">
+                        <input id="pciinputnumber2" class="pciinput">
+                    </div>
+                    <div class="pcisubmit">
+                        <button id="pcieditsubmit">
+                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-recent-message">
+                <div class="phone-message-header">
+                    <div id="phone-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phoneheadlinemessage"> </div>
+                    <i id=" phone-edit" class="fas fa-pen" style="display: none; position: absolute; right: 3vh;  top: 0.5vh;color: rgb(27, 131, 216)"></i>
+                </div>
+                <div class="phone-recent-messages-sector">
+                    <div class="phone-recent-messages-selection" data-number="1345">
+                        <div id="prm-contactname">
+                            Reiner Winkler
+                        </div>
+                        <div id="prm-message">
+                            Das hier ist eine beispielhafte nachricht welche nicht mehr zu sehen
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-message">
+                <div class="phone-message-header">
+                    <div id="phone-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phoneheadlinechat"> </div>
+                </div>
+                <div class="phone-chat">
+
+                </div>
+                <div class="phone-chat-input">
+                    <input type="text" id="phone-chat-input-message" class="phone-chat-inputt">
+                </div>
+                <div class="phone-chat-place">
+                    <i id="phone-chat-placeicon" style="position: relative;" class="fas fa-map-marker-alt"> </i>
+                    <!-- <i id="phone-chat-contact" class="fas fa-address-book"> </i> -->
+                    <i id="phone-chat-send" style="position: relative;" class="fas fa-paper-plane"> </i>
+                </div>
+            </div>
+
+            <div class="phone-call" id="phone-call">
+                <div class="phone-call-header" id="phone-call-header">
+                    <div id="phone-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phoneheadlinephone"> </div>
+                    <i id=" phone-edit" class="fas fa-pen" style="display: none; position: absolute; right: 3vh;  top: 0.5vh;color: rgb(27, 131, 216)"></i>
+                </div>
+                <div class="phone-call-sector">
+                    <div id="phone-number-enter">
+
+                    </div>
+                    <div class="phone-enter-sector">
+                        <div class="phone-enter" id="phone-enter" data-id="1">
+                            1
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="2">
+                            2
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="3">
+                            3
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="4">
+                            4
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="5">
+                            5
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="6">
+                            6
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="7">
+                            7
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="8">
+                            8
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="9">
+                            9
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="'*'">
+                            *
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="0">
+                            0
+                        </div>
+                        <div class="phone-enter" id="phone-enter" data-id="'#'">
+                            #
+                        </div>
+                        <div class="phone-enterinvisible">
+                        </div>
+                        <div class="phone-enter-call">
+                            <i style="position: relative; margin-top: 1.5vh" class="ApplicationIcon fas fa-phone"></i>
+                        </div>
+                        <div class="phone-enterinvisible" id="phone-enter-deletelast">
+                            <i class="ApplicationIcon fas fa-backspace phone-enterinvisibleicon"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="phone-all-call-sector">
+                    <div class="phone-all-call-sector-selection" data-number="%s">
+                        <div class="phone-all-call-sector-selection-text">
+                            <font style="color: gray;"> Ausgehender Anruf </font><br> %s</div>
+                        <div class="phone-all-call-sector-selection-recall"><i id="pacs-message" data-number="%s" style="margin-top: 2vh" class="fas fa-envelope pacs-icon"></i><i id="pacs-call" data-number="%s" class="fas fa-phone pacs-icon"></i></div>
+                    </div>
+                </div>
+                <div class="phone-call-bottom">
+                    <div class="phone-call-footer-item" id="pcb-numpad">
+
+                    </div>
+                    <div class="phone-call-footer-item" id="pcb-calls">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-settings">
+                <div class="phone-settings-header">
+                    <div id="phone-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phoneheadlinesettings"> </div>
+                    <i id=" phone-edit" class="fas fa-pen" style="display: none; position: absolute; right: 3vh;  top: 0.5vh;color: rgb(27, 131, 216)"></i>
+                </div>
+                <div class="phone-settings-sector">
+                    <div class="phone-settings-selection">
+                        <font id="phonesettingsnumbertext">
+
+                        </font>
+                        <font id="phonesettingsnumber">
+                            1987
+                        </font>
+                    </div>
+                    <div class="phone-settings-selection">
+                        <font id="phonesettingsselectionflightmode">
+
+                        </font>
+                        <label class="cl-switch switch-blue phone-settings-switch">
+                            <input type="checkbox" id="flightmode" onclick="flightmode()">
+                            <span class="switcher"></span>
+                        </label>
+                    </div>
+                    <div class="phone-settings-selection">
+                        <font id="phonesettingsselectionmute">
+
+                        </font>
+                        <label class="cl-switch switch-blue phone-settings-switch">
+                            <input  id="mute" onclick="mute()" type="checkbox">
+                            <span class="switcher"></span>
+                        </label>
+                    </div>
+                    <div class="phone-settings-selection">
+                        <font id="phonesettingsselectiondarkmode">
+
+                        </font>
+                        <label class="cl-switch switch-blue phone-settings-switch">
+                            <input  id="darkmodetoggle" onclick="darkmodetoggle()" type="checkbox">
+                            <span class="switcher"></span>
+                        </label>
+                    </div>
+                    <div class="phone-settings-selection">
+                        <font id="phonesettingsselectionwallpaper"></font>
+                        <i id="changewallpaper" class="fas fa-chevron-right phone-settings-switch"></i>
+                    </div>
+                </div>
+                <div class="phone-settings-wallpaper ">
+                    <div class="phone-settings-wallpaper-headline">
+                        <i id="backwallaper" style="transform: rotate(180deg); position: absolute; left: -16vh; top: 1.1vh;" class="fas fa-chevron-right phone-settings-switch"></i>
+                        <font id="pswh"> </font>
+                    </div>
+                    <div class="pswdiv">
+                        <input id="psw">
+
+
+                    </div>
+                    <div class="pswsubmit">
+                        <button class="pswsubmitbutton" id="pswsubmitbutton">
+                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-services">
+                <div class="phone-app-header">
+                    <div id="phone-service-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phservice"> </div>
+                    </p>
+                </div>
+
+                <div class="phone-services-sector">
+                    <div class="phone-services-list">
+                        <div class="phone-service" data-service="LSPD">
+                            <div class="phone-service-name">Polizei</div>
+                            <div class="phone-service-actions"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                        <div class="phone-service" data-service="ambulance">
+                            <div class="phone-service-name">Mediziner</div>
+                            <div class="phone-service-actions"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-services-message">
+                    <div class="phone-service-message-name" id="psmn">
+
+                    </div>
+                    <div class="phone-service-message-inputs">
+                        <input class="phone-service-message-input" type="text">
+                    </div>
+                    <div class="phone-service-selection">
+                        <font id="pss">
+
+                        </font>
+                        <label class="cl-switch switch-blue phone-settings-switch">
+                                <input type="checkbox" id="sendnumber">
+                                <span class="switcher"></span>
+                            </label>
+                    </div>
+                    <div class="phone-service-selection">
+                        <font id="pssposition">
+
+                        </font>
+                        <label class="cl-switch switch-blue phone-settings-switch">
+                                <input type="checkbox" id="sendgps">
+                                <span class="switcher"></span>
+                            </label>
+                    </div>
+                    <div class="phone-service-button">
+                        <button id="phone-service-button">
+                            
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="phone-businessapp">
+                <div class="phone-app-header">
+                    <div id="phone-businessapp-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phbusiness"> </div>
+                    </p>
+                </div>
+
+                <div class="phone-businessapp-sector">
+                    <div class="phone-ba-motd">
+                        <div class="phone-ba-motd-h">
+                            <font style="font-size: 1.8vh;" id="motdchange"> </font>
+                        </div>
+                        <div id="phone-ba-motd-inhalt">
+                            Message of the Day Message of the Day Message of the Day Message of the Day Message of the Day Message of the Day Message of the Day Message of the Day
+                        </div>
+                    </div>
+
+                    <div id="phone-ba-member">
+                        Mitglieder online: 8
+                    </div>
+                    <div class="phone-ba-member-list">
+
+                    </div>
+
+                </div>
+
+                <div class="phone-recent-businessapp-sector">
+                    <div class="phone-recent-businessapp-selection" data-number="1345">
+                        <div id="prm-contactname">
+                            Reiner Winkler
+                        </div>
+                        <div id="prm-message">
+                            Das hier ist eine beispielhafte nachricht welche nicht mehr zu sehen
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-businessapp-message">
+                    <div class="phone-businessapp-chat">
+
+                    </div>
+                    <div class="phone-businessapp-delete">
+                        <button class="phone-businessapp-button bpb-accept" id="bpb-accept-4644" onclick="bpbaccept()">
+                            <font id="pbbacceptfont">  </font>
+                        </button>
+                        <button class="phone-businessapp-button bpb-decline" id="bpb-decline-4644" onclick="bpbdecline()">
+                            <font id="pbbacceptfont2">  </font>
+                        </button>
+                    </div>
+                    <div class="phone-businessapp-input">
+                        <input type="text" id="phone-business-input-message" class="phone-businessapp-inputt">
+                    </div>
+
+                    <div class="phone-businessapp-place">
+                        <i id="phone-businessapp-placeicon" style="position: relative;" class="fas fa-map-marker-alt"> </i>
+                        <!-- <i id="phone-chat-contact" class="fas fa-address-book"> </i> -->
+                        <i id="phone-businessapp-send" style="position: relative;" class="fas fa-paper-plane"> </i>
+                    </div>
+                </div>
+
+                <div class="phone-businessapp-settings">
+                    <div class="phone-businessapp-settings-menu">
+                        <font id="pbsmfont"> </font>
+                        <i id="changemotd" class="fas fa-chevron-right phone-settings-switch"></i>
+                    </div>
+                </div>
+
+                <div class="phone-businessapp-motd ">
+                    <div class="phone-businessapp-motd-headline">
+                        <i id="backmotd" style="transform: rotate(180deg); position: absolute; left: -16vh; top: 1.1vh;" class="fas fa-chevron-right phone-settings-switch"></i>
+                        <font id="pbsmfont2"> </font>
+                    </div>
+                    <div class="pswdiv">
+                        <input id="motd">
+                    </div>
+                    <div class="pswsubmit">
+                        <button class="pswsubmitbutton" id="motdsubmit">
+                            <font id="pbsmfont3">  </font> 
+                        </button>
+                    </div>
+                </div>
+
+                <div class="phone-businessapp-footer">
+                    <div class="phone-businessapp-footer-item" id="pbf-member">
+
+                    </div>
+                    <div class="phone-businessapp-footer-item" id="pbf-messages">
+
+                    </div>
+                    <div class="phone-businessapp-footer-item" id="pbf-settings">
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="phone-radio">
+                <div class="phone-app-header">
+                    <div id="phone-radio-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phfunk"> </div>
+                    </p>
+                </div>
+
+                <div class="phone-radio-sector">
+                    <div class="phone-radio-list">
+                        <div class="phone-radio-frequenz-inputs">
+                            <input class="phone-radio-frequenz-input" id="phone-radio-frequenz-input" type="number">
+                        </div>
+                        <div class="phone-frequenz-button">
+                            <button id="phone-frequenz-join-button">
+                                
+                            </button>
+                        </div>
+                        <div class="phone-frequenz-button">
+                            <button id="phone-frequenz-leave-button">
+                                
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Twitter Head -->
+            <div class="phone-twitter">
+                <!-- Header F -->
+                <div class="phone-twitter-header">
+                    <div id="phone-return">
+                        <i class="fas fa-arrow-left phone-returnicon">
+                        </i>
+                    </div>
+                    <div class="phone-headline" id="phoneheadlinetwitter"> </div>
+                </div>
+
+                <!-- Home Screen F-->
+                <div class="phone-tweets ">
+
+                </div>
+
+                <!-- Setting Screen F-->
+                <div class="phone-twitter-settings ">
+                    <div class="phone-twitter-settings-avatarsection">
+                        <div class="phone-twitter-settings-avatar" style="background-image: url('https://www.pngitem.com/pimgs/m/24-248309_transparent-profile-clipart-font-awesome-user-circle-hd.png');">
+                            <div class="phone-twitter-settings-avatarhover">
+                                <i class="phone-twitter-settings-avataredit fas fa-edit"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-twitter-settings-username">
+
+                        <font id="twitter-username"> Dennis </font>
+                        <i class="twitter-edit-username fas fa-edit"></i>
+                    </div>
+
+                </div>
+
+                <!-- New Tweet  F-->
+                <div class="phone-twitter-newtweet">
+                    <div class="ptw-header ">
+                        <font id="ptw-tweetheader-font">
+
+                        </font>
+                    </div>
+                    <div class="ptw-tweet ">
+                        <textarea type="text " class="phone-tweet-input" id="ptw-tweetinput"></textarea>
+                    </div>
+                    <div class="ptw-submitzone">
+                        <i class="ptw-submitzone-icon fas fa-image " data-url="0" id="ptw-addimage"></i>
+                        <button class="ptw-submit" id="ptw-tweetsubmit">
+                                
+                            </button>
+                    </div>
+                </div>
+
+                <!-- Link to Image F-->
+                <div class="phone-twitter-image">
+                    <div class="ptw-header ">
+                        <i class="ptw-exiticon fas fa-times "></i>
+                        <font id="ptw-header-font">
+
+                        </font>
+                    </div>
+                    <div class="ptw-tweet ">
+                        <textarea type="text " class="phone-tweet-input " id="ptw-imageurl"></textarea>
+                    </div>
+                    <div class="ptw-submitzone ">
+                        <button class="ptw-pbsubmit ptw-imagesubmit" id="ptw-imagesubmit">
+                            
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Profilpicture link F-->
+                <div class="phone-twitter-newpb">
+                    <div class="ptw-header ">
+                        <i class="ptw-exiticon fas fa-times "></i>
+                        <font id="ptw-header-font2">
+
+                        </font>
+                    </div>
+                    <div class="ptw-tweet ">
+                        <textarea type="text " class="phone-tweet-input" id="ptw-pbinput"></textarea>
+                    </div>
+                    <div class="ptw-submitzone ">
+                        <button class="ptw-pbsubmit" id="ptw-pbsubmit">
+                                
+                        </button>
+                    </div>
+                </div>
+
+                <!-- New NameF -->
+                <div class="phone-twitter-name">
+                    <div class="ptw-header ">
+                        <i class="ptw-exiticon fas fa-times "></i>
+                        <font id="ptw-header-font3">
+
+                        </font>
+                    </div>
+                    <div class="ptw-tweet ">
+                        <textarea type="text " class="phone-tweet-input " id="ptw-username"></textarea>
+                    </div>
+                    <div class="ptw-submitzone ">
+                        <button class="ptw-pbsubmit" id="ptw-usernamesubmit">
+                                
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- First Time Register F-->
+                <div class="phone-twitter-firsttime">
+                    <div class="ptw-header">
+                        <font id="ptw-header-font4">
+
+                        </font>
+                    </div>
+                    <div class="phone-twitter-firsttime-avatarsection">
+                        <div class="phone-twitter-firsttime-avatar" data-url="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png" style="background-image: url('https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-512.png');">
+                            <div class="phone-twitter-firsttime-avatarhover">
+                                <i class="phone-twitter-firsttime-avataredit fas fa-edit"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-twitter-firsttime-username">
+                        <font id="twitter-ftusername">Username</font>
+                        <i class="twitter-edit-ftusername fas fa-edit"></i>
+                        <br>
+                        <font id="twitter-ftuserid">@username</font>
+                        <i class="twitter-edit-ftuserid fas fa-edit"></i>
+                    </div>
+                    <button class="twitter-firsttime-button" id="twitter-firsttimeregister">
+                            
+                        </button>
+                </div>
+
+                <!-- First Time Avatar F-->
+                <div class="phone-twitter-ftavatar">
+                    <div class="ptw-header ">
+                        <i class="ptw-exiticon fas fa-times "></i>
+                        <font id="ptw-header-font5">
+
+                        </font>
+                    </div>
+                    <div class="ptw-tweet ">
+                        <textarea type="text " class="phone-tweet-input " id="ptw-ftavatarurl"></textarea>
+                    </div>
+                    <div class="ptw-submitzone ">
+                        <button class="ptw-pbsubmit" id="ptw-ftavatarsubmit">
+                                
+                        </button>
+                    </div>
+                </div>
+
+                <!-- New Name F-->
+                <div class="phone-twitter-firsttimename">
+                    <div class="ptw-header ">
+                        <i class="ptw-exiticon fas fa-times "></i>
+                        <font id="ptw-header-font6">
+
+                        </font>
+                    </div>
+                    <div class="ptw-tweet ">
+                        <textarea type="text " class="phone-tweet-input " id="ptw-ftusername"></textarea>
+                    </div>
+                    <div class="ptw-submitzone ">
+                        <button class="ptw-pbsubmit ptw-firsttimeusername" id="ptw-firsttimeusername">
+                                
+                        </button>
+                    </div>
+                </div>
+
+                <div class="phone-twitter-firsttimeid">
+                    <div class="ptw-header ">
+                        <i class="ptw-exiticon fas fa-times "></i>
+                        <font id="ptw-header-font7">
+
+                        </font>
+                    </div>
+                    <div class="ptw-tweet ">
+                        <textarea type="text " class="phone-tweet-input " id="ptw-ftid"></textarea>
+                    </div>
+                    <div class="ptw-submitzone ">
+                        <button class="ptw-pbsubmit" id="ptw-firsttimerid">
+                                
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="phone-twitter-footer ">
+                    <div class="phone-twitter-footer-icon " id="ptf-home">
+                        <i class="phone-twitter-footer-icons fas fa-house-user "></i>
+                    </div>
+                    <div class="phone-twitter-footer-icon " id="ptf-newtweet">
+                        <i class="phone-twitter-footer-icons fas fa-pen-nib "></i>
+                    </div>
+                    <div class="phone-twitter-footer-icon " id="ptf-settings">
+                        <i class="phone-twitter-footer-icons fas fa-cog "></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <div class="notification ">
+
+    </div>
+
+    <script src="./js/call.js "></script>
+    <script src="./js/contact.js "></script>
+    <script src="./js/messages.js "></script>
+    <script src="./js/locales.js "></script>
+    <script src="./js/twitter.js "></script>
+</body>
+
+<script>
+    $(document).ready(function() {
+        $(".phone-call-incoming-title ").html(locale.callincomingtitle);
+        $(".phone-call-outgoing-title ").html(locale.calloutgoingtitle);
+        $(".phone-call-ongoing-title ").html(locale.callongoingtitle);
+        $("#phone-contact-headline ").html(locale.phonecontactheadline);
+        $("#pciheadoverview ").html(locale.pciheadoverview);
+        $("#pcinumbertext ").html(locale.pcinumber);
+        $("#pcicall2 ").html(locale.pcicall);
+        $("#pcimessage2 ").html(locale.pcimessage);
+        $("#pcifavourit2").html(locale.pcifavorit);
+        $("#pcigps ").html(locale.pcigps);
+        $("#pcishare ").html(locale.pcishare);
+        $("#pcidelete ").html(locale.pcidelete);
+        $("#pciheadadd ").html(locale.pciheadadd);
+        $("#pciinputsubmit ").html(locale.pciinputsubmit);
+        $("#pciheadedit ").html(locale.pciheadedit);
+        $("#pcieditsubmit ").html(locale.pcieditsubmit);
+        $("#phoneheadlinemessage ").html(locale.phoneheadlinemessage);
+        $("#phoneheadlinechat ").html(locale.phoneheadlinechat);
+        $("#phoneheadlinephone ").html(locale.phoneheadlinephone);
+        $("#pcb-numpad ").html(locale.pcbnumpad);
+        $("#pcb-calls ").html(locale.pcbcalls);
+        $("#phoneheadlinesettings ").html(locale.phoneheadlinesettings);
+        $("#phonesettingsselectionflightmode ").html(locale.phonesettingsselectionflightmode);
+        $("#phonesettingsselectionmute ").html(locale.phonesettingsselectionmute);
+        $("#phonesettingsselectiondarkmode ").html(locale.phonesettingsselectiondarkmode);
+        $("#phonesettingsselectionwallpaper ").html(locale.phonesettingsselectionwallpaper);
+        $("#pswh ").html(locale.pswh);
+        $("#pswsubmitbutton ").html(locale.pswsubmitbutton);
+        $("#phservice ").html(locale.phservice);
+        $("#psmn ").html(locale.psmn);
+        $("#pss ").html(locale.pss);
+        $("#pssposition ").html(locale.pssposition);
+        $("#phone-service-button ").html(locale.phoneservicebutton);
+        $("#phbusiness ").html(locale.phbusiness);
+        $("#motdchange ").html(locale.motdchange);
+        $("#pbbacceptfont ").html(locale.pbbacceptfont);
+        $("#pbbacceptfont2 ").html(locale.pbbacceptfont2);
+        $("#pbsmfont ").html(locale.motdchange);
+        $("#pbsmfont2 ").html(locale.pbsmfont2);
+        $("#pbsmfont3 ").html(locale.pbsmfont3);
+        $("#pbf-member ").html(locale.pbfmember);
+        $("#pbf-messages ").html(locale.pbfmessages);
+        $("#pbf-settings ").html(locale.pbfsettings);
+        $("#phfunk ").html(locale.phfunk);
+        $("#phone-frequenz-join-button ").html(locale.pfjb);
+        $("#phone-frequenz-leave-button ").html(locale.pflb);
+        $("#phonesettingsnumbertext ").html(locale.phonenumber);
+        $(".ptw-submit").each(function() {
+            $(this).html(locale.ptwtweetsubmit);
+        });
+        $(".twitter-firsttime-button").html(locale.ptwtweetsubmit);
+        $(".ptw-pbsubmit").each(function() {
+            $(this).html(locale.ptwtweetsubmit);
+        });
+        $("#phoneheadlinetwitter ").html(locale.phoneheadlinetwitter);
+        $("#ptw-tweetheader-font").html(locale.ptwtweetheaderfont);
+        $("#ptw-header-font").html(locale.ptwheaderfont);
+        $("#ptw-header-font2").html(locale.ptwheaderfont2);
+        $("#ptw-header-font3").html(locale.ptwheaderfont3);
+        $("#ptw-header-font4").html(locale.ptwheaderfont4);
+        $("#ptw-header-font5").html(locale.ptwheaderfont5);
+        $("#ptw-header-font6").html(locale.ptwheaderfont3);
+        $("#ptw-header-font7").html(locale.ptwheaderfont7);
+
+        // Placeholder
+        $('#pciinputname').attr("placeholder", locale.name);
+        $('#pciinputname2').attr("placeholder", locale.name);
+        $('#pciinputnumber').attr("placeholder", locale.number);
+        $('#pciinputnumber2').attr("placeholder", locale.number);
+        $('#phone-chat-input-message').attr("placeholder", locale.message);
+        $('#psw').attr("placeholder", locale.png);
+        $('.phone-service-message-input').attr("placeholder", locale.description);
+        $('#phone-business-input-message').attr("placeholder", locale.message);
+        $('#motd').attr("placeholder", locale.message);
+        $('#ptw-tweetinput').attr("placeholder", locale.message);
+        $('#phone-radio-frequenz-input').attr("placeholder", locale.frequency);
+        $('#ptw-imageurl').attr("placeholder", locale.url);
+        $('#ptw-pbinput').attr("placeholder", locale.url);
+        $('#ptw-username').attr("placeholder", locale.name);
+        $('#ptw-ftavatarurl').attr("placeholder", locale.url);
+        $('#ptw-ftusername').attr("placeholder", locale.name);
+        $('#ptw-ftid').attr("placeholder", locale.name);
+
+    });
+</script>
+
+</html>

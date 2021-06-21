@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+body{
+    font-family: 'Questrial', sans-serif;
+    user-select: none;
+}
+.header-btn{
+    background-color: #484e58;
+    padding: 20px;
+    
+    margin-right: -15px;
+    margin-left: -15px;
+    /* transition: 0.3s; */
+
+}
+.home-btn{
+    clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.member-btn,.store-btn{
+    clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+}
+.upgrade-btn{
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.nav-bar{
+    padding:0px 30px;
+}
+
+.nav-bar .col{
+    padding: 1px;
+}
+
+.header-btn.active{
+    background-color: #0199a1;
+}
+
+.container{
+    margin-top: 5%;
+    background-color: #222831;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.header-btn:hover{
+    background-color: #0199a1;
+}
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    color :#f8f5f1
+}
+.an-enter{
+    opacity: 0.01%;
+}
+.an-enter-active{
+    opacity: 0.01%;
+}
+.an-enter-done{
+    opacity: 1%;
+    transition: opacity 500ms linear;
+}
+.an-exit{
+    opacity:1;
+}
+.an-exit-active{
+    opacity: 0.01;
+    transition: opacity 500ms linear;
+}
+::-webkit-scrollbar{
+    display: none;
+    width: 0;
+    background: transparent;
+}

@@ -1,0 +1,69 @@
+.store-container{
+    display: grid;
+    grid-template-columns: 140px 140px 140px 140px;
+    grid-template-rows: 140px 140px 140px 140px;
+    grid-row-gap: 2px;
+    width: 600px;
+    height: 400px;
+    overflow: auto
+}
+
+.store-item{
+    position: relative;
+    background-color: #484e58;
+    width: auto;
+    height: 140px;
+    padding: 1px;
+    margin: 1px;
+    margin-top: 1px;
+    
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.itemName{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #98393C;
+}
+.store-item .price{
+    text-align: center;
+    position: absolute;
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #ffc93c;
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 11% 100%)
+}
+.store-item .buy-btn{
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: 45px;
+    right: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #9ede73;
+    opacity: 0;
+    transition: 0.3s;
+    box-shadow: lightslategray;
+}
+.store-item:hover{
+    background-color: #0199a1;
+}
+
+.store-item:hover > .buy-btn{
+    opacity: 100%;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}

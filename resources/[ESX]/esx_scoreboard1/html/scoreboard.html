@@ -1,0 +1,52 @@
+﻿<html>
+
+<head>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="nui://esx_scoreboard/html/listener.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="nui://esx_scoreboard/html/style.css">
+</head>
+
+<body>
+	<div style="display: none;" id="wrap">
+
+		<div class="header">
+			<div class="jobs">
+				<p style="color:rgb(255, 166, 0);"> 👨‍⚕️ Bác sĩ: <span id="ems">0</span> </p>
+				<p style="color:#5ea1e0;"> 👮 Cảnh sát: <span id="police">0</span> </p>
+				<p style="color:yellow;"> 🚕 Taxi: <span id="taxi">0</span> </p>
+				<p style="color:rgb(29, 28, 28);"> 🔧 Cứu hộ: <span id="mechanic">0</span> </p>
+				<p style="color:lightblue;"> 🐟 Câu cá: <span id="fisherman">0</span> </p>
+				<p style="color:rgb(54, 43, 83);"> 💎 Thợ mỏ: <span id="miner">0</span> </p>
+				<p style="color:rgb(240, 145, 235);"> ✂️ Thợ may: <span id="tailor">0</span> </p>
+				<p style="color:rgb(62, 189, 51);"> ⚒ Chặt gỗ: <span id="lumberjack">0</span> </p>
+				<p style="color:rgb(68, 4, 11);"> 💉 Thần Y 4.0: <span id="thany">0</span> </p>
+				<!-- <p style="color:lightblue;"> 📷 Nhà báo: <span id="cardealer">0</span> </p> -->
+				<!-- <p style="color:#58ce93;">Thất nghiệp: 🚗 <span id="estate">0</span> </p> -->
+			</div>
+		</div>
+
+		<div class="playerlist">
+			<table id="playerlist" width="100%">
+				<tr class="heading">
+					<th>Tên</th>
+					<th>ID</th>
+					<th>Ping</th>
+					<th>Nghề</th>
+					<th>Tên</th>
+					<th>ID</th>
+					<th>Ping</th>
+					<th>Nghề</th>
+				</tr>
+			</table>
+		</div>
+
+		<div class="serverinfo">
+			Người chơi: <span id="player_count">0</span> / <span id="max_players">0</span> <span style="font-size: 1.2vw">|</span>
+			Thời gian hoạt động: <span id="server_uptime"></span><span style="font-size: 1.2vw"> |</span>
+			Thời gian đã chơi: <span id="play_time"></span>
+		</div>
+
+	</div>
+</body>
+
+</html>

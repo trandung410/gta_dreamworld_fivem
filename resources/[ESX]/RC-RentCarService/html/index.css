@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+  
+  
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+a{
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+h3{
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p{
+  color: rgb(194, 22, 22);
+  font-weight: bold;
+  font-size: 17px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#windowBG{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 750px;
+  height: 650px;
+  background: rgb(190, 190, 190);
+  border-width: 0 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+#header {
+  background: rgb(255, 255, 255);
+  display: block;
+  top: 50%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-8%, -50%);
+  width: 900px;
+  height: 80px;
+  
+}
+
+#mainText{
+  text-align: center;
+  position: absolute;
+  top: 0%;
+  left: 18%;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+#closeBtn {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 25%;
+  right: 5%;
+}
+
+#logo{
+  margin-left: 30px;
+  height: 100px;
+  width: 100px;
+}
+
+
+
+
+
+
+#windowBG2{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 450px;
+    height: 450px;
+    background: rgb(255, 255, 255);
+    border-width: 0 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+  }
+
+  #check{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 195px;
+    height: 252px;
+  }
+
+  #logo2{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+  }
+
+  #askH2{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #acceptAsk{
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background-color: #48ac4c;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20px;
+  }
+
+  #acceptAsk:hover{
+    background-color: #55c959;
+  }
+
+  #closeAsk{
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    background-color: #b91313;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20px;
+  }
+
+  #closeAsk:hover{
+    background-color: #d81919;
+  }
+
+
+  #modelName{
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+  }
+
+
+
+#sportCars {
+  position: absolute;
+  top: 27%;
+  left: -7%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
+  border-width: 0 10px;
+  border-radius: 20px;
+  transition: .3s ;
+}
+
+#sportCars:hover {
+  background: rgb(181, 211, 255);
+}
+
+#sportCarImg {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#classicCars {
+  position: absolute;
+  top: 53%;
+  left: -7%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
+  border-width: 0 10px;
+  border-radius: 20px;
+  transition: .3s ;
+}
+
+#classicCars:hover {
+  background: rgb(181, 211, 255);
+}
+
+#classicCarImg {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#motorcycles {
+  position: absolute;
+  top: 79%;
+  left: -7%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .3);
+  border-width: 0 10px;
+  border-radius: 20px;
+  transition: .3s ;
+}
+
+#motorcycles:hover {
+  background: rgb(181, 211, 255);
+}
+
+#motorcycleImg {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#supercars {
+  display: block;
+}
+
+#supercarsText{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-size: 27px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+#slot1Supercar{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot2Supercar{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot3Supercar{
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+#slot4Supercar{
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot5Supercar{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot6Supercar{
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+#slot1Supercar:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot2Supercar:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot3Supercar:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot4Supercar:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot5Supercar:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot6Supercar:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+
+
+
+
+
+
+
+
+
+
+#classiccars {
+  display: none;
+}
+
+#classiccarsText{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-size: 27px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+#slot1Classic{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot2Classic{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot3Classic{
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+#slot4Classic{
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot5Classic{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot6Classic{
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+#slot1Classic:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot2Classic:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot3Classic:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot4Classic:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot5Classic:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot6Classic:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+
+
+
+
+
+#motorcyclecars img{
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#classiccars img{
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#supercars img{
+  width: 120px;
+  height: 120px;
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+#motorcyclecars {
+  display: none;
+}
+
+#motorcyclecarsText{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-size: 27px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+
+#slot1Motorcycle{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot2Motorcycle{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot3Motorcycle{
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+#slot4Motorcycle{
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot5Motorcycle{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+#slot6Motorcycle{
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+#slot1Motorcycle:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot2Motorcycle:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot3Motorcycle:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot4Motorcycle:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot5Motorcycle:hover{
+  background-color: rgb(221, 221, 221);
+}
+#slot6Motorcycle:hover{
+  background-color: rgb(221, 221, 221);
+}
+
+@keyframes askPlayer{
+  0%{
+    top: 50%;
+  }
+  100%{
+    top: 60%;
+  }
+}

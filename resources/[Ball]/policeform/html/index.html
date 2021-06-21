@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="reset.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+		<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		<div id="container">
+			<div id="startscreen">
+				<img class="logo" alt="lspd" src="https://static.wikia.nocookie.net/gta/images/5/5e/Sceau-lspd-gtav.png/revision/latest?cb=20140916194909&path-prefix=fr">
+				<h1 style="margin-left: 160px; margin-top: 50px; font-size: 45px; font-family: 'Secular One', sans-serif;
+			    	margin: 0;
+    				position: absolute;
+    				top: 50%;
+    				left: 50%;
+    				-ms-transform: translate(-50%, -50%);
+					transform: translate(-50%, -50%);">Cục Cảnh Sát LSPD </h1>
+				<button class="button" id="start">Làm Đơn</button>
+			</div>
+
+
+			<!-- Form -->
+
+
+
+			<div id="info">
+				
+				<label class="label">Tên Discord Và ID,VD:BALL#0551 ID:670</label>
+				<input id="firstname" type="text" placeholder="Type Here" class="input"  required="true" name="need" ><br>
+				<label class="label1">Tên Ingame</label>
+				<input id="lastname" type="text" placeholder="Type Here" class="input"  required="true" name="need" ><br>
+				<label class="label2">Tuổi</label>
+				<input id="age" type="number" placeholder="Type Here" class="input"  required="true" name="need" ><br>
+				<label class="label3">kinh nghiệm bản thân và Khung giờ onl</label>
+				<input id="why"type="text" type="textarea" placeholder="Type Here" class="why"  required="true"  name="need"><br>
+				<label class="label4">Giới Tính:</label>
+
+				<select  class="gender" id="gender" required="true">
+					<option value="Male">Nam</option>
+					<option value="Female">Nữ</option>
+				</select>
+
+
+				<strong class="warn"  id="warn">Vui lòng Điền đầy đủ thông tin!</strong>
+				<button class="sumbit" id="sumbit">Hoàn tất</button>
+			</div>
+
+			<!-- Done -->
+
+			<div id="done">
+				<strong class="thanks">Đơn đã hoàn tất xin vui lòng chờ được xét duyệt</strong>
+				<button class="exit" id="exit">Exit</button>
+			</div>
+
+
+		</div>
+        <script src="./index.js" type="text/javascript"></script>
+	</body>
+</html>

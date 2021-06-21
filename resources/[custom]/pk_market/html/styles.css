@@ -1,0 +1,339 @@
+font-face {
+	font-family: bankgothic;
+	src: url('../fonts/bankgothic.ttf');
+}
+
+@font-face {
+	font-family: pcdown;
+	src: url('../fonts/pdown.ttf');
+}
+
+*{
+	user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+html {
+  overflow: hidden;
+  font-family: 'Lato','Athiti', sans-serif;
+}
+
+body{
+	display: none;
+  color: #ffffff;
+  background: linear-gradient(90deg,rgba(247, 22, 255, 0.6) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 20%);
+  animation: fadeInLeft;
+  animation-duration: 1s;
+}
+
+.shop-container {
+  width: 40%;
+  height: 80%;
+  background-color: none;
+  position: absolute;
+  transform: translateX(50px);
+  top: 10%;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  overflow: hidden;
+  z-index: 9;
+  /* display: none; */
+  animation: anim 0.5s;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+  top: 20px;
+  position: relative;
+  transition: .5s;
+  background: rgba(151, 151, 151, 0.1);
+  border: 0.5px solid rgba(78, 78, 78, 0.6);
+  border-radius: 2px;
+}
+.card:hover .buy{
+  animation: buyy 0.3s;
+  display: block;
+}
+.inputgroup {
+  position: absolute;
+  bottom: 29%;
+  left: 5%;
+  color: rgb(192, 192, 192);
+  background: rgba(87, 87, 87, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+  animation: buyy 1s;
+  z-index: 999;
+}
+input {
+  width: 100px;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Lato','Athiti', sans-serif;
+}
+.card:hover {
+  width: 100px;
+  height: 100px;
+  color: white;
+  background: linear-gradient(140deg, rgba(37,136,186,0.9) , rgba(183,52,219,0.9));
+  border: 0.5px solid rgba(78, 78, 78, 0.6);
+}
+.help {
+  position: absolute;
+  padding: 10px 15px ;
+  background: rgba(58, 58, 58, 0.356);
+  font-size: 15px;
+  display: block;
+  bottom: 20%;
+  left: 5%;
+  animation: buyy 1s;
+  color: rgb(192, 192, 192);
+}
+@keyframes buyy {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes buy {
+  from {
+    letter-spacing: 5px;
+ 
+  }
+  to {
+    letter-spacing: 0.3px;
+
+  }
+}
+@keyframes cardanim {
+  from {
+    transform: translateX(-50px);
+    letter-spacing: 3px;
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) skew(7deg);
+    opacity: 1;
+    letter-spacing: 0;
+  }
+}
+
+.buy {
+  position: relative;
+  display: none;
+  bottom: 70px;
+  background: none;
+  color: white;
+  background: rgb(2, 91, 255);
+  padding: 4px 4px;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 75px;
+  width: 70%;
+  /* margin-left: auto; */
+  transition: .5s;
+  z-index: 999;
+  border-radius: 3px;
+}
+
+.buy::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: rgb(2, 91, 255);
+  transform: rotate(45deg);
+  position: absolute;
+  left: -5px;
+  top: 10px;
+  z-index: -1;
+  border-radius: 1px;
+}
+
+
+.buy p {
+  font-size: 12px;
+  margin: 0 auto;
+}
+.info p {
+  position: absolute;
+  font-size: 15px;
+  bottom: 9%;
+  left: 5%;
+  color: rgb(192, 192, 192);
+  background: rgba(87, 87, 87, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+  animation: buyy 1s;
+  transform: skew(-7deg);
+}
+.info2 p {
+  position: absolute;
+  font-size: 15px;
+  bottom: 5%;
+  left: 5%;
+  color: rgb(192, 192, 192);
+  background: rgba(87, 87, 87, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+  animation: buyy 1s;
+  transform: skew(-7deg);
+}
+
+.price{
+	/* margin: auto; */
+	font-size: 13px;
+	text-decoration: none;
+  text-align:left;
+  color: rgb(189, 189, 189);
+  transform: skew(-5deg);
+  top: 0;
+  margin-left: 5px;
+  
+}
+
+button:focus,
+input:focus {
+  outline:0;
+}
+
+/* On mouse-over, add a deeper shadow */
+
+
+
+
+
+.full-screen {
+  width: 100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(60px) translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(50px);
+    opacity: 1;
+  }
+}
+
+.header {
+  width:100%;
+  height: 35px;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+
+.header h5 {
+  font-size: 30px;
+  left: -250px;
+  position: relative;
+  margin:auto;
+  padding-bottom: 5px;
+  transform: skew(-5deg);
+  animation: buy 1.5s;
+  letter-spacing: 0.3px;
+  font-weight: 900;
+  font-family: 'Dancing Script', cursive;
+}
+.header::before {
+  content: "";
+  left: 220px;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background: linear-gradient(90deg,rgba(183,52,219,0.0) 0%,rgba(183,52,219,0.7)20%,rgba(37,136,186,0.7)80%,rgba(37,136,186,0.0)100%); 
+  animation: kuyrai 2s;
+  opacity: 0;
+  
+}
+@keyframes kuyrai {
+  from {
+    transform: translateX(-300px) scaleX(1.5);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0) scaleX(0);
+    opacity: 1;
+  }
+}
+@keyframes textfuck {
+  from {
+    letter-spacing: 5px;
+  }
+  to {
+    letter-spacing: 0.3px;
+  }
+}
+
+
+
+#menu {
+  width: 800px;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  background-color: rgba(9, 18, 26, 1);
+  position: absolute;
+  z-index: 20;
+  margin-left: 23%;
+  overflow: hidden;
+  border-radius: 3px;
+  
+}
+
+
+::-webkit-scrollbar { 
+     background: red;
+}
+
+.body {
+	overflow: auto;
+	width: 100%;
+	height: 440px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	/* display: none; */
+
+}
+
+.bold-text{
+  font-size: 1.3em;
+}
+
+.ham {
+  display: block;
+  margin: 0 auto;
+  bottom: 17px;
+  position: relative;
+}
+
+
+
+

@@ -1,0 +1,25 @@
+.notification {
+    display: block;
+    position: fixed;
+    width: 30vh;
+    height: 98vh;
+    top: 1vh;
+    left: 1vh;
+    overflow: hidden;
+}
+
+.notify {
+    position: relative;
+    width: 90%;
+    min-height: 5%;
+    height: auto;
+    padding: 2vh;
+    left: 5%;
+    background-color: rgba(24, 23, 23, 0.75);
+    line-height: 2vh;
+    color: #fff;
+    font-family: Samsung Sans Regular;
+    font-weight: 500;
+    font-size: 1.5vh;
+    margin-top: 1vh;
+}
